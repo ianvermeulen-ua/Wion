@@ -1,0 +1,71 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-energized {
+	border-color: #fff;
+	background-color: #fff;
+	color: #333;
+}
+
+.bar-energized.nav-bar {
+	background-color: #fff;
+	color: #444;
+	border-color: #fff;
+}
+
+.item-content i.icon,
+.item i.icon,
+.bar.bar-energized.nav-bar button.button {
+	color: #cf0013;
+}
+
+.bar.bar-energized.nav-bar .title {
+	color: #333;
+}
+
+.bar.bar-energized .title {
+	color: #333;
+}
+
+.button.button-energized.button-clear {
+	color: #cf0013;
+}
+
+.button.button-positive {
+	background-color: #cf0013;
+}
+
+.button.button-energized {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.button.button-energized.activated {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color: #fff;
+}
+
+.button.button-assertive {
+	background-color: rgba(207, 0, 19, 0.9);
+}
+
+.button.button-assertive.activated {
+	background-color: rgba(207, 0, 19, 1);
+}
+img.auth-logo {
+	width: 20%;
+	margin-bottom: 20px;
+}
+
+.auth-bg {
+	background: url('../img/auth-bg.jpeg') no-repeat center center fixed;
+}
+
+.logo-title-container {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.logo-title {
+	color: #fff;
+	font-size: 4em;
+}

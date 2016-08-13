@@ -1,0 +1,62 @@
+<ion-view view-title="About">
+
+	<ion-content>    
+
+		<!-- slideshow -->
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-1-sized.jpg">
+			</ion-slide>
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-2-sized.jpg">
+			</ion-slide>
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-3-sized.jpg">
+			</ion-slide>
+		</ion-slide-box>
+
+		<!-- card -->
+		<div class="list card">	
+
+			<div class="item">
+				<h2>About us</h2>
+			</div>
+
+			<div class="item item-body">
+				<img class="full-image" src="img/about.jpg">
+				<p>Wij zijn de Wikings. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Integer interdum mauris eros, ut tempus turpis lobortis eu. 
+				<br>
+				Vestibulum nec massa in est vulputate iaculis a sed dolor. Donec eu faucibus mauris.</p>
+			</div>
+
+		</div>
+
+		<div class="list">
+
+			<a class="item item-icon-left" href="mailto:info@wikings.be">
+				<i class="icon ion-ios-email-outline"></i>
+				info@wikings.be
+			</a>
+
+			<a class="item item-icon-left" href="tel:+32484000000">
+				<i class="icon ion-ios-telephone-outline"></i>
+				+324 84 00 00 00
+			</a>
+
+
+		</div>
+
+		<!-- slideshow with text overlay -->
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" show-pager="false">
+			<ion-slide>
+				<div class="image-box">
+					<img class="full-image" src="img/about-bottom-slide-1.jpg">
+					<p>Imagination TD Wikings 2015</p>
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+
+	</ion-content>
+
+</ion-view>
