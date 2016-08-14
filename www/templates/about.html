@@ -2,6 +2,11 @@
 
 	<ion-content>    
 
+	<ion-refresher
+		pulling-text="Pull to refresh..."
+		spinner="spiral" 
+		on-refresh="doRefresh()">
+	</ion-refresher>
 		<!-- slideshow -->
 		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
 			<ion-slide>
@@ -33,18 +38,10 @@
 		</div>
 
 		<div class="list">
-
-			<a class="item item-icon-left" href="mailto:info@wikings.be">
-				<i class="icon ion-ios-email-outline"></i>
-				info@wikings.be
+			<a class="item item-icon-left" ng-repeat="contact in contactInfos" href="{{contact.custom_fields.link[0]}}">
+				<i class="icon {{contact.custom_fields.icon[0]}}"></i>
+				{{contact.custom_fields.waarde[0]}}
 			</a>
-
-			<a class="item item-icon-left" href="tel:+32484000000">
-				<i class="icon ion-ios-telephone-outline"></i>
-				+324 84 00 00 00
-			</a>
-
-
 		</div>
 
 		<!-- slideshow with text overlay -->
@@ -56,6 +53,10 @@
 				</div>
 			</ion-slide>
 		</ion-slide-box>
+
+		<div class="loading-box" ng-show="isFetching">
+			<ion-spinner icon="spiral"></ion-spinner>
+		</div>
 
 	</ion-content>
 
