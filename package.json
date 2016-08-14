@@ -1,7 +1,7 @@
 {
-  "name": "restaurant",
+  "name": "Wikings",
   "version": "1.0.0",
-  "description": "restaurant: An Ionic project",
+  "description": "Wikings: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-cached": "^1.1.0",

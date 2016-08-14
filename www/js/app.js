@@ -7,7 +7,7 @@
 
 var api = 'http://digitalmangos.com/api/';
 var useAuth = true;
-var showWalkthrough = true;
+var showWalkthrough = false;
 var showOfflineMessage = true;
 var blockIfOffline = true;
 
@@ -426,7 +426,7 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
 
   $urlRouterProvider.otherwise( function($injector, $location) {
     var $state = $injector.get("$state");
-    $state.go("app.categoriesMenu");
+    $state.go("app.home");
   });
   
 })
