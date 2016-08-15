@@ -69,3 +69,13 @@ img.auth-logo {
 	color: #fff;
 	font-size: 4em;
 }
+
+.title.title-center {
+	right: 0 !important;
+}
+
+.nav-logo {
+	height: 40px;
+	margin-top: 2px;
+	float: right;
+}

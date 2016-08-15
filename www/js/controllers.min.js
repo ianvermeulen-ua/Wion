@@ -24,36 +24,34 @@ angular.module('roots.controllers')
             return false;
         }
 
-        var localPosts = [];
-
         // check storage for saved posts
         // if we have stored some, then we need to verify their modified date and count
-        if ($localstorage.getObject( $scope.localStoragePrefix + 'items' ) !== null) {
-            localPosts = $localstorage.getObject( $scope.localStoragePrefix + 'items' );
-        }
-        else {
+        if ($localstorage.getObject( $scope.localStoragePrefix + 'items' ) === null) {
             return true;
         }
+        var localPosts = $localstorage.getObject( $scope.localStoragePrefix + 'items' );
 
-        var shouldUpdate = false;
+        $scope.updateIfNeeded(localPosts);
+    };
 
+    $scope.updateIfNeeded = function(localPosts) {
         ContactInfo.get().success(function(response) {
-            var onlinePosts = response.posts;
+        var onlinePosts = response.posts;
 
-            if(onlinePosts.length != localPosts.length) {
+        if(onlinePosts.length != localPosts.length) {
+            $scope.getContactInfos();
+            return;
+        }
+
+        onlinePosts.some(function(post, index) {
+            var onlineModified = new Date(post.modified);
+            var localModified = new Date(localPosts[index].modified);
+
+            if(localModified < onlineModified) {
                 $scope.getContactInfos();
-                return;
+                return true;
             }
-
-            onlinePosts.some(function(post, index) {
-                var onlineModified = new Date(post.modified);
-                var localModified = new Date(localPosts[index].modified);
-
-                if(localModified < onlineModified) {
-                    $scope.getContactInfos();
-                    return true;
-                }
-                return false;
+            return false;
             });
         });
     };
