@@ -36,7 +36,7 @@ angular.module('roots.controllers')
 	 * @returns true if the object is present on storage
 	 */
 	function isObjectStored( objectSlug ) {
-		return $localstorage.getObject( updateObjects[ objectSlug ] + 'items' ) !== null;
+		return $localstorage.getObject( updateObjects[ objectSlug ].prefix + 'items' ) !== null;
 	}
 
 	/**
@@ -46,7 +46,7 @@ angular.module('roots.controllers')
 	 * @returns the object read from local storage
 	 */
 	function getStoredObject( objectSlug ) {
-		return $localstorage.getObject( updateObjects[ objectSlug ] + 'items' );
+		return $localstorage.getObject( updateObjects[ objectSlug ].prefix + 'items' );
 	}
 
 	/**
@@ -56,7 +56,7 @@ angular.module('roots.controllers')
 	 * @param value The new value for the object
 	 */
 	function setStoredObject( objectSlug, value ) {
-		$localstorage.setObject( updateObjects[ objectSlug ] + 'items', value );
+		$localstorage.setObject( updateObjects[ objectSlug ].prefix + 'items', value );
 	}
 
 	/**
@@ -118,7 +118,7 @@ angular.module('roots.controllers')
         // check storage for saved posts
 		for( var updateObject in updateObjects ) {
 			if ( !isObjectStored( updateObject ) ) {
-				fetchUpdates( updateObjects );
+				fetchUpdates( updateObject );
 				return true;
 			}
 
