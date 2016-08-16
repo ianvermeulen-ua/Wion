@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="list">
-			<a class="item item-icon-left" ng-repeat="contact in content.contact" href="{{contact.custom_fields.link[0]}}">
+			<a class="item item-icon-left" ng-repeat="contact in content.contact" ng-href="{{contact.custom_fields.link[0]}}">
 				<i class="icon {{contact.custom_fields.icon[0]}}"></i>
 				{{contact.custom_fields.waarde[0]}}
 			</a>

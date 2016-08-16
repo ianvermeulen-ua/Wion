@@ -79,3 +79,7 @@ img.auth-logo {
 	margin-top: 2px;
 	float: right;
 }
+
+.previous-title .nav-logo {
+	display: none;
+}
