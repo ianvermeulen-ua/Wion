@@ -1,84 +1,164 @@
 angular.module('roots.controllers')
 
-.controller('AboutCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicScrollDelegate, ContactInfo) {
-    $scope.contactInfos = [];
+.controller('AboutCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicScrollDelegate, ContactInfo, MobilePage) {
 	$scope.isFetching = true;	
 	$scope.shouldRefresh = false;
 
-	$scope.localStoragePrefix = 'contact_info_'; 
-	$scope.useLocalStorage = true; // set to false if you don't want local storage
+	// set the page category to about
+	MobilePage.setCategory('about');
 
-	$scope.loadMore = function(refresh) {
-		if($scope.useLocalStorage === true && $localstorage.getObject( $scope.localStoragePrefix + 'items' ) !== null ){
-			$scope.contactInfos = $localstorage.getObject( $scope.localStoragePrefix + 'items' );
-			ContactInfo.all($scope.contactInfos);
-			$scope.isFetching = false;
-		} else {
-			$scope.getContactInfos();
+	/**
+	 * Dictionary of objects that contain both the factory of the object and the prefix for storage
+	 */
+	var updateObjects = {
+		'contact' : {
+			'factory' : ContactInfo,
+			'prefix' : 'contact_info_'
+		},
+		'page' : {
+			'factory' : MobilePage,
+			'prefix' : 'mobile_page_'
 		}
 	};
 
-    $scope.checkForUpdates = function() {
+	/**
+	 * The content that require updating
+	 */
+	$scope.content = {
+		'contact' : [],
+		'page' : []
+	};
+
+	/**
+	 * Check if an object is stored on local storage
+	 * 
+	 * @param objectSlug The slug of the object that is checked
+	 * @returns true if the object is present on storage
+	 */
+	function isObjectStored( objectSlug ) {
+		return $localstorage.getObject( updateObjects[ objectSlug ] + 'items' ) !== null;
+	}
+
+	/**
+	 * Gets an object stored on local storage
+	 * 
+	 * @param objectSlug The slug of the object that is read
+	 * @returns the object read from local storage
+	 */
+	function getStoredObject( objectSlug ) {
+		return $localstorage.getObject( updateObjects[ objectSlug ] + 'items' );
+	}
+
+	/**
+	 * Sets an object stored on local storage
+	 * 
+	 * @param objectSlug The slug of the object that is written to
+	 * @param value The new value for the object
+	 */
+	function setStoredObject( objectSlug, value ) {
+		$localstorage.setObject( updateObjects[ objectSlug ] + 'items', value );
+	}
+
+	/**
+	 * Performs an update for the update objects
+	 * 
+	 * @param refresh
+	 */
+	$scope.loadMore = function( refresh ) {
+		for ( var updateObject in updateObjects ) {
+			if ( isObjectStored( updateObject ) ) {
+				$scope.content[ updateObject ] = getStoredObject( updateObject );
+				updateObjects[ updateObject ].factory.all( $scope.content[ updateObject ] );
+				$scope.isFetching = false;
+			}
+			else {
+				$scope.isFetching = true;
+				fetchUpdates( updateObject );
+			}
+		}
+	};
+
+	/**
+	 * Broadcast the refresh complete event if needed
+	 */
+	function broadcastRefreshComplete() {
+		if($scope.shouldRefresh===true){
+			$scope.$broadcast('scroll.refreshComplete');
+			$scope.shouldRefresh = false;
+		}
+	}
+
+	/**
+	 * Perform a AJAX get to update the given object
+	 * 
+	 * @param objectSlug slug for the object that requires updating
+	 */
+	function fetchUpdates( objectSlug ) {
+		updateObjects[ objectSlug ].factory.get().success( function( response ) {
+			$scope.content[ objectSlug ] = response.posts;
+			updateObjects[ objectSlug ].factory.all( $scope.content[ objectSlug ] );
+
+			$scope.isFetching = false;
+			
+			setStoredObject( objectSlug, $scope.content[ objectSlug ] );
+
+			broadcastRefreshComplete();
+		});
+	}
+
+	/**
+	 * Checks for updates for the update objects
+	 */
+    function checkForUpdates() {
         // check if we are online
         if(!navigator.onLine) {
             return false;
         }
 
         // check storage for saved posts
-        // if we have stored some, then we need to verify their modified date and count
-        if ($localstorage.getObject( $scope.localStoragePrefix + 'items' ) === null) {
-            return true;
-        }
-        var localPosts = $localstorage.getObject( $scope.localStoragePrefix + 'items' );
+		for( var updateObject in updateObjects ) {
+			if ( !isObjectStored( updateObject ) ) {
+				fetchUpdates( updateObjects );
+				return true;
+			}
 
-        $scope.updateIfNeeded(localPosts);
-    };
+			var localPosts = getStoredObject( updateObject );
+			updateIfNeeded( updateObject, localPosts );
+		}
+    }
 
-    $scope.updateIfNeeded = function(localPosts) {
-        ContactInfo.get().success(function(response) {
-        var onlinePosts = response.posts;
+	/**
+	 * Update the object if needed
+	 * 
+	 * @param updateObject The object that might require updating
+	 * @param localPosts The posts that are already on local storage
+	 */
+    function updateIfNeeded( updateObject, localPosts ) {
+        updateObjects[ updateObject ].factory.get().success( function( response ) {
+			var onlinePosts = response.posts;
 
-        if(onlinePosts.length != localPosts.length) {
-            $scope.getContactInfos();
-            return;
-        }
+			if(onlinePosts.length != localPosts.length) {
+				fetchUpdates( updateObject );
+				return;
+			}
 
-        onlinePosts.some(function(post, index) {
-            var onlineModified = new Date(post.modified);
-            var localModified = new Date(localPosts[index].modified);
+			onlinePosts.some(function(post, index) {
+				var onlineModified = new Date(post.modified);
+				var localModified = new Date(localPosts[index].modified);
 
-            if(localModified < onlineModified) {
-                $scope.getContactInfos();
-                return true;
-            }
-            return false;
+				if(localModified < onlineModified) {
+					fetchUpdates( updateObject );
+					return true;
+				}
+				return false;
             });
         });
-    };
-
-	$scope.getContactInfos = function(){
-		// size of the picture, taxonomy and order by
-		ContactInfo.get().success(function(response){
-			$scope.contactInfos = response.posts;
-			ContactInfo.all($scope.contactInfos);
-
-			$scope.isFetching = false;
-			
-			if($scope.useLocalStorage === true){
-				$localstorage.setObject($scope.localStoragePrefix + 'items', $scope.contactInfos);
-			}
-
-			if($scope.shouldRefresh===true){
-				$scope.$broadcast('scroll.refreshComplete');
-				$scope.shouldRefresh = false;
-			}
-
-		});
-	};
+    }
 
 	$scope.doRefresh = function(){
-		$localstorage.remove($scope.localStoragePrefix + 'items');
+		$localstorage.remove($scope.contactStoragePrefix + 'items');
 		$scope.contactInfos = [];
+		$scope.mobilePages = [];
 		$scope.shouldRefresh = true;
 		$scope.loadMore();		
 	};
@@ -86,5 +166,5 @@ angular.module('roots.controllers')
 	// let's start
 	$scope.loadMore();
 
-    $scope.checkForUpdates();
+    checkForUpdates();
 });
