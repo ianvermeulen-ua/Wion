@@ -13,11 +13,13 @@ angular.module('roots.controllers')
 	var updateObjects = {
 		'contact' : {
 			'factory' : ContactInfo,
-			'prefix' : 'contact_info_'
+			'prefix' : 'contact_info_',
+			'isFetching' : true
 		},
 		'page' : {
 			'factory' : MobilePage,
-			'prefix' : 'mobile_page_'
+			'prefix' : 'mobile_page_',
+			'isFetching' : true
 		}
 	};
 
@@ -60,6 +62,28 @@ angular.module('roots.controllers')
 	}
 
 	/**
+	 * Removes a stored object from storage
+	 * 
+	 * @param objectSlug The slug of the object that will be deleted
+	 */
+	function removeObject( objectSlug ) {
+		$localstorage.remove( updateObjects[ objectSlug ].prefix + 'items' );
+	}
+
+	/**
+	 * Check if all objects are done fetching
+	 * 
+	 * @returns true if all objects are fetched
+	 */
+	function isDoneFetching() {
+		for ( var updateObject in updateObjects ) {
+			if ( updateObjects[ updateObject ].isFetching ) {
+				return false;
+			}
+		}
+		return true;
+	}
+	/**
 	 * Performs an update for the update objects
 	 * 
 	 * @param refresh
@@ -69,13 +93,18 @@ angular.module('roots.controllers')
 			if ( isObjectStored( updateObject ) ) {
 				$scope.content[ updateObject ] = getStoredObject( updateObject );
 				updateObjects[ updateObject ].factory.all( $scope.content[ updateObject ] );
-				$scope.isFetching = false;
+				updateObjects[ updateObject ].isFetching = false;
+
+				if( isDoneFetching() ) {
+					$scope.isFetching = false;
+				}
 			}
 			else {
-				$scope.isFetching = true;
 				fetchUpdates( updateObject );
 			}
 		}
+
+		broadcastRefreshComplete();
 	};
 
 	/**
@@ -98,11 +127,13 @@ angular.module('roots.controllers')
 			$scope.content[ objectSlug ] = response.posts;
 			updateObjects[ objectSlug ].factory.all( $scope.content[ objectSlug ] );
 
-			$scope.isFetching = false;
+			updateObjects[ objectSlug ].isFetching = false;
+
+			if( isDoneFetching() ) {
+				$scope.isFetching = false;
+			}
 			
 			setStoredObject( objectSlug, $scope.content[ objectSlug ] );
-
-			broadcastRefreshComplete();
 		});
 	}
 
@@ -156,9 +187,11 @@ angular.module('roots.controllers')
     }
 
 	$scope.doRefresh = function(){
-		$localstorage.remove($scope.contactStoragePrefix + 'items');
-		$scope.contactInfos = [];
-		$scope.mobilePages = [];
+		for ( var updateObject in updateObjects ) {
+			removeObject( updateObject );
+			$scope.content[ updateObject ] = [];
+		}
+
 		$scope.shouldRefresh = true;
 		$scope.loadMore();		
 	};

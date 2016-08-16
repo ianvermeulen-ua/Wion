@@ -14,7 +14,7 @@ angular.module('roots.controllers')
 
 			$http({
 				method  : 'POST',
-				url     : 'http://dev.studio31.co/email/send-email.php',
+				url     : 'http://digitalmangos.com/send-email.php',
 				data    : {
 					name: $scope.contact.name,
 					email: $scope.contact.email,
