@@ -3,27 +3,32 @@
 .bar.bar-energized {
 	border-color: #fff;
 	background-color: #fff;
+	background-image: none;
 	color: #333;
+
 }
 
 .bar-energized.nav-bar {
-	background: #fff;
-	color: #444;
+	background: #cf0013;
+	color: #fff;
 	border-color: #fff;
 }
 
 .item-content i.icon,
-.item i.icon,
-.bar.bar-energized.nav-bar button.button {
+.item i.icon {
 	color: #cf0013;
 }
 
+.bar.bar-energized.nav-bar button.button {
+	color: #fff;
+}
+
 .bar.bar-energized.nav-bar .title {
-	color: #333;
+	color: #fff;
 }
 
 .bar.bar-energized .title {
-	color: #333;
+	color: #fff;
 }
 
 .button.button-energized.button-clear {

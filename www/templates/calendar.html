@@ -1,0 +1,82 @@
+<ion-view view-title='<span class="nav-title"> Over ons </span> <img src="img/logo-red.png" class="nav-logo">'>
+
+	<ion-content>    
+
+	<ion-refresher
+		pulling-text="Pull to refresh..."
+		spinner="spiral" 
+		on-refresh="doRefresh()">
+	</ion-refresher>
+		<!-- slideshow -->
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-1-sized.jpg">
+			</ion-slide>
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-2-sized.jpg">
+			</ion-slide>
+			<ion-slide>
+				<img class="full-image" src="img/about-slide-3-sized.jpg">
+			</ion-slide>
+		</ion-slide-box>
+
+		<div class="one-half-responsive">
+                <h3 class="right-text half-bottom padding-right">January, 2025</h3>
+                <div class="calendar-titles">
+                    <a class="light-titles" href="#">S</a>
+                    <a href="#">M</a>
+                    <a href="#">T</a>
+                    <a href="#">W</a>
+                    <a href="#">T</a>
+                    <a href="#">F</a>
+                    <a class="light-titles" href="#">S</a>
+                </div>
+                <div class="decoration half-bottom"></div>
+                <div class="calendar-days">
+                    <!-- &nbsp adds a space for the single numbers, this way they can be centered in boxes -->
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp1</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp2</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp3</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp4</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp5</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp6</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp7</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp8</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>&nbsp9</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>10</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>11</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>12</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>13</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>14</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>15</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>16</a>
+                    <a class="taken-day" href="#"><i class="fa fa-circle"></i>17</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>18</a>
+                    <a class="close-day" href="#"><i class="fa fa-circle"></i>19</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>20</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>21</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>22</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>23</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>24</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>25</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>26</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>27</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>28</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>29</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>30</a>
+                    <a class="clear-day" href="#"><i class="fa fa-circle"></i>31</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp1</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp2</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp3</a>
+                    <a class="light-day" href="#"><i class="fa fa-circle"></i>&nbsp4</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+		<div class="loading-box" ng-show="isFetching">
+			<ion-spinner icon="spiral"></ion-spinner>
+		</div>
+
+	</ion-content>
+
+</ion-view>
