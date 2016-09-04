@@ -368,6 +368,17 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
       },
       authenticate: true
     })
+    
+    .state('app.calendar', {
+      url: '/calendar',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/calendar.html',
+          controller: 'CalendarCtrl'
+        }
+      },
+      authenticate: true
+    })
 
     .state('app.forms', {
       url: '/forms',

@@ -8,6 +8,25 @@ angular.module('roots.controllers')
 	$scope.loginData = {};
 	$scope.signupData = {};
 
+	$scope.formData = {
+		studies : [
+			{ id : 0, name : 'TEW' },
+			{ id : 1, name : 'HI' },
+			{ id : 2, name : 'HIB' },
+			{ id : 3, name : 'SEW' },
+			{ id : 4, name : 'Andere (UA stadscampus)' },
+			{ id : 5, name : 'Andere (UA buitencampus)' },
+			{ id : 6, name : 'Andere (UA buitencampus)' },
+		],
+		years : [
+			{ id : 0, name : '1ste bachelor' },
+			{ id : 1, name : '2de bachelor' },
+			{ id : 2, name : '3de bachelor' },
+			{ id : 3, name : '1ste master' },
+			{ id : 4, name : 'Andere' }
+		]
+	};
+
 	$ionicModal.fromTemplateUrl('templates/auth.login.html', {
 		scope: $scope
 	}).then(function(modal) {
@@ -158,7 +177,14 @@ angular.module('roots.controllers')
 				if(response.status==='ok'){
           			nonce = response.nonce;          
 
-          			User.register(nonce, $scope.signupData.name, $scope.signupData.username, $scope.signupData.email, $scope.signupData.password ).success(function(response){
+          			User.register(nonce, 
+					  $scope.signupData.firstName, 
+					  $scope.signupData.lastName, 
+					  $scope.signupData.username, 
+					  $scope.signupData.email, 
+					  $scope.signupData.password,
+					  $scope.signupData.study,
+					  $scope.signupData.year ).success(function(response){
 
           				if(response.status==='ok'){
 

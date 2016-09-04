@@ -11,11 +11,25 @@
 
       <div class="list list-inset">
         <label class="item item-input">
-          <span class="input-label">Full Name</span>
-          <input type="text" ng-model="signupData.name" required>
+          <span class="input-label">Voornaam</span>
+          <input type="text" ng-model="signupData.firstName" required>
         </label>
         <label class="item item-input">
-          <span class="input-label">Username</span>
+          <span class="input-label">Achternaam</span>
+          <input type="text" ng-model="signupData.lastName" required>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Studierichting</span>
+          <select ng-init="formData.studies[0].id" ng-options="study.name for study in formData.studies track by study.id" ng-model="signupData.study" required>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Jaar</span>
+          <select ng-init="formData.years[0].id" ng-options="year.name for year in formData.years track by year.id" ng-model="signupData.year" required>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Gebruikersnaam</span>
           <input type="text" ng-model="signupData.username" required>
         </label>
          <label class="item item-input">
@@ -23,14 +37,14 @@
           <input type="email" ng-model="signupData.email" required>
         </label>
         <label class="item item-input item-icon-right">
-          <span class="input-label">Password</span>
+          <span class="input-label">Wachtwoord</span>
           <i class="icon ion-eye" on-touch="showPassword = !showPassword"></i>
           <input type="text" ng-if="showPassword" name="password" ng-model="signupData.password" required>
           <input type="password" ng-if="!showPassword" name="password" ng-model="signupData.password" required>
         </label>
       </div>
       <div class="padding">
-        <button class="button button-block button-assertive" type="submit">Sign Up</button>
+        <button class="button button-block button-assertive" type="submit">Registreer</button>
       </div>
     </form>
   </ion-content>
