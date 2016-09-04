@@ -15,7 +15,29 @@ Text Domain: wion
 add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
-function my_show_extra_profile_fields( $user ) { ?>
+function my_show_extra_profile_fields( $user ) {
+	$studies = array(
+		'0' => 'TEW',
+		'1' => 'HI',
+		'2' => 'HIB',
+		'3' => 'SEW',
+		'4' => 'Andere (UA stadscampus)',
+		'5' => 'Andere (UA buitencampus)',
+		'6' => 'Andere (niet-UA)'
+	);
+
+	$years = array(
+		'0' => '1ste bachelor',
+		'1' => '2de bachelor',
+		'2' => '3de bachelor',
+		'3' => '1ste master',
+		'4' => '2de master',
+		'5' => 'Andere'
+	);
+
+	$userStudy = esc_attr( get_the_author_meta( 'study', $user->ID ) );
+	$userYear = esc_attr( get_the_author_meta( 'year', $user->ID ) );
+	 ?>
 
 	<h3>Studie informatie</h3>
 
@@ -23,14 +45,10 @@ function my_show_extra_profile_fields( $user ) { ?>
 		<tr>
 			<th><label for="study">Studierichting</label></th>
 			<td>
-				<select name="study" id="study" value="<?php echo esc_attr( get_the_author_meta( 'study', $user->ID ) ); ?>">
-					<option value="0"> TEW </option>
-					<option value="1"> HI </option>
-					<option value="2"> HIB </option>
-					<option value="3"> SEW </option>
-					<option value="4"> Andere (UA stadscampus) </option>
-					<option value="5"> Andere (UA buitencampus) </option>
-					<option value="6"> Andere (niet-UA) </option>
+				<select name="study" id="study" value="<?php echo $userStudy; ?>">
+				<?php foreach ( $studies as $id => $studyName ) { ?>
+					<option value="<?php echo $id; ?>" <?php if ( $userStudy == $id ) { echo "selected"; } ?> > <?php echo $studyName; ?> </option>
+				<?php } ?>
           		</select><br/>
 				<span class="description">De studierichting van de gebruiker</span>
 			</td>
@@ -38,13 +56,10 @@ function my_show_extra_profile_fields( $user ) { ?>
 		<tr>
 			<th><label for="year">Jaar</label></th>
 			<td>
-				<select name="year" id="year" value="<?php echo esc_attr( get_the_author_meta( 'year', $user->ID ) ); ?>">
-					<option value="0"> 1ste bachelor </option>
-					<option value="1"> 2de bachelor </option>
-					<option value="2"> 3de bachelor </option>
-					<option value="3"> 1ste master </option>
-					<option value="4"> 2de master </option>
-					<option value="5"> Andere) </option>
+				<select name="year" id="year" value="<?php echo $userYear; ?>">
+				<?php foreach ( $years as $id => $yearName ) { ?>
+					<option value="<?php echo $id; ?>" <?php if ( $userYear == $id ) { echo "selected"; } ?> > <?php echo $yearName; ?> </option>
+				<?php } ?>
           		</select><br/>
 				<span class="description">Het studiejaar van de gebruiker</span>
 			</td>
