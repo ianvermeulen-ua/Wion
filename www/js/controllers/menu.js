@@ -4,6 +4,8 @@ angular.module('roots.controllers')
 
 	$scope.isLogged = false;
 
+	$scope.role = User.role();
+
 	if(User.isLoggedIn()){
 		$scope.isLogged = true;
 	}

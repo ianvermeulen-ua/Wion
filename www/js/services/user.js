@@ -36,6 +36,9 @@ angular.module('roots.services')
     email: function(){
       return profile.email;
     },
+    role : function() {
+      return profile.role;
+    },
     isLoggedIn: function() {
       return isLoggedIn; 
     },
@@ -57,10 +60,6 @@ angular.module('roots.services')
             '&study='+study+
             '&year='+year+
             '&notify=no&insecure=cool&callback=JSON_CALLBACK' ) );
-
-            updateRequest.success( function ( updateResponse ) {
-              console.log(updateResponse);
-            } );
           }
         } );
 
@@ -71,6 +70,9 @@ angular.module('roots.services')
     },
     getRegisterNonce: function(){
       return $http.jsonp(api+'get_nonce/?controller=user&method=register&insecure=cool&callback=JSON_CALLBACK');
+    },
+    requestMembership: function(cookie) {
+      return $http.jsonp( encodeURI( api+'user/request_user_membership/?cookie='+cookie+'&insecure=cool&callback=JSON_CALLBACK' ) );
     },
     getInfo: function(user_id){
       return $http.jsonp( encodeURI( api+'user/get_userinfo/?user_id='+user_id+'&insecure=cool&callback=JSON_CALLBACK' ) );

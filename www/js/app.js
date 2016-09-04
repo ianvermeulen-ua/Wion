@@ -402,6 +402,17 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
       authenticate: true
     })
 
+    .state('app.member', {
+      url: '/member',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/member.html',
+          controller: 'MemberCtrl'
+        }
+      },
+      authenticate: true
+    })
+
     .state('app.map', {
       url: '/map',
       views: {
