@@ -16,14 +16,15 @@ angular.module('roots.controllers')
 			{ id : 3, name : 'SEW' },
 			{ id : 4, name : 'Andere (UA stadscampus)' },
 			{ id : 5, name : 'Andere (UA buitencampus)' },
-			{ id : 6, name : 'Andere (UA buitencampus)' },
+			{ id : 6, name : 'Andere (niet-UA)' },
 		],
 		studyYears : [
 			{ id : 0, name : '1ste bachelor' },
 			{ id : 1, name : '2de bachelor' },
 			{ id : 2, name : '3de bachelor' },
 			{ id : 3, name : '1ste master' },
-			{ id : 4, name : 'Andere' }
+			{ id : 4, name : '2de master' },
+			{ id : 5, name : 'Andere' },
 		]
 	};
 
