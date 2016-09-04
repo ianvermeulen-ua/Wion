@@ -39,17 +39,32 @@ angular.module('roots.services')
     isLoggedIn: function() {
       return isLoggedIn; 
     },
-    register: function(nonce, firstName, lastName, username, email, password, study){
-      return $http.jsonp( encodeURI( api+'user/register/?nonce='+nonce+
+    register: function(nonce, firstName, lastName, username, email, password, study, year){        
+      var registerRequest = $http.jsonp( encodeURI( api+'user/register/?nonce='+nonce+
       '&display_name='+firstName+'%20'+lastName+
         '&first_name='+firstName+
         '&last_name='+lastName+
         '&username='+username+
         '&email='+email+
         '&user_pass='+password+
-        '&study='+study+
-        '&year='+year+
         '&notify=no&insecure=cool&callback=JSON_CALLBACK' ) );
+
+        registerRequest.success( function( registerResponse ) {
+          if ( registerResponse.status === 'ok' ) {
+            var cookie = registerResponse.cookie;
+
+            var updateRequest = $http.jsonp( encodeURI( api + 'user/update_user_meta_vars/?cookie='+cookie+
+            '&study='+study+
+            '&year='+year+
+            '&notify=no&insecure=cool&callback=JSON_CALLBACK' ) );
+
+            updateRequest.success( function ( updateResponse ) {
+              console.log(updateResponse);
+            } );
+          }
+        } );
+
+        return registerRequest;
     },
     getAuthNonce: function(){
       return $http.jsonp(api+'get_nonce/?controller=user&method=generate_auth_cookie&insecure=cool&callback=JSON_CALLBACK');
