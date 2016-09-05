@@ -12,6 +12,12 @@ Domain Path: /
 Text Domain: wion
 */
 
+function enqueue_fontawesome() {
+   wp_enqueue_style( 'fontawesome', 'http:////netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css', '', '4.5.0', 'all' );
+}
+
+add_action('admin_init', 'enqueue_fontawesome');
+
 add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
@@ -79,4 +85,48 @@ function my_save_extra_profile_fields( $user_id ) {
 	update_usermeta( $user_id, 'study', $_POST['study'] );
 	update_usermeta( $user_id, 'year', $_POST['year'] );
 }
+
+add_action( 'manage_users_columns', 'my_modify_user_columns' );
+
+function my_modify_user_columns( $column_headers ) {
+  unset($column_headers['posts']);
+
+  return $column_headers;
+}
+
+function confirm_payment() {
+	if( !isset( $_GET['action'] ) || esc_attr( $_GET[ 'action' ] ) != 'confirm_payment' ) {
+		return;
+	}
+    $user_id = esc_attr( $_GET['user'] );
+    $nonce = esc_attr( $_REQUEST['_wpnonce'] );
+
+    if ( ! wp_verify_nonce( $nonce, 'wion_confirm_payment' ) ) {
+      die( 'Go get a life script kiddies' );
+    }
+	else {
+		if ( !current_user_can( 'edit_user', $user_id ) )
+			return false;
+
+		$user = new WP_User( $user_id );
+		$user->set_role( 'lid' );
+	}
+}
+
+add_action( 'admin_action_confirm_payment', 'confirm_payment' );
+
+function cgc_ub_action_links( $actions, $user_object ) {
+	$confirm_nonce = wp_create_nonce( 'wion_confirm_payment' );
+	
+	if ( $user_object->roles[0] == 'nietbetaald' || $user_object->roles[0] == 'subscriber' ) {
+		$actions['confirm_payment'] = "<a href='" 
+		. admin_url( "users.php?&action=confirm_payment&user=$user_object->ID&_wpnonce=$confirm_nonce") 
+		. "'>" 
+		. __( '<i class="fa fa-credit-card"></i> Betaling goedkeuren', 'wion' ) 
+		. "</a>";
+	}
+	return $actions;
+}
+add_filter('user_row_actions', 'cgc_ub_action_links', 10, 2);
+
 ?>
