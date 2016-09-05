@@ -1,14 +1,15 @@
 angular.module('roots.controllers')
 
-.controller('MemberCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $compile, User) {
+.controller('MemberCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $compile, $ionicPopup, $ionicLoading, User) {
     $scope.role = User.role();
-    $scope.membershipRequesting = false;
 
     $scope.requestMembership = function() {
         var token = $localstorage.get("token");
-        
-        $scope.membershipRequesting = true;
-        
+
+        $ionicLoading.show({
+            template: 'Requesting...'
+        });
+
         User.requestMembership( token ).success( function( response ) { 
             var profile = User.get();
             profile.role = 'nietbetaald';
@@ -17,7 +18,43 @@ angular.module('roots.controllers')
 
             User.set( profile );
 
-            $scope.membershipRequesting = false;
+            $rootScope.$broadcast( 'membership_changed' );
+            $ionicLoading.hide();
+        } )
+        .error( function( response ) {
+            $ionicLoading.hide();
+
+            $ionicPopup.alert( {
+                title: 'Error',
+                template: "Er is een fout opgetreden met het verbinden met de server. Probeer later opnieuw"
+            } );
+        } );
+    };
+
+    $scope.checkPayment = function() {
+        $ionicLoading.show({
+            template: 'Checking...'
+        });
+
+        User.getInfo( User.id() ).success( function( response ) {
+            if ( response.role == 'lid' ) {
+                $scope.role = 'lid';
+
+                User.set( response );
+                $rootScope.$broadcast( 'membership_changed' );
+            }
+            else {
+                $scope.paymentMessage = 'Uw betaling is nog niet goedgekeurd. Probeer het later opnieuw!';
+            }
+            $ionicLoading.hide();
+        } )
+        .error( function( response ) {
+            $ionicLoading.hide();
+
+            $ionicPopup.alert( {
+                title: 'Error',
+                template: "Er is een fout opgetreden met het verbinden met de server. Probeer later opnieuw"
+            } );
         } );
         
     };

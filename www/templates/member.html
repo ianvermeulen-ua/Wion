@@ -41,6 +41,15 @@
 					&euro; 10 storten op BE00 0000 0000 0000 <br>
 					WIKINGS-NSK
 					</p>
+					<button class="button button-block button-assertive" ng-click="checkPayment()" ng-hide="paymentChecking">
+						Controleer betaling
+					</button>
+					<p style="text-align: center;">
+						<ion-spinner ng-show="paymentChecking"></ion-spinner>
+					</p>
+					<p style="color: #cf0013; text-align: center;" ng-if="paymentMessage != ''">
+						{{paymentMessage}}
+					</p>
 				</p>
 			</div>
 			<div class="item item-body" ng-if="role=='lid'">

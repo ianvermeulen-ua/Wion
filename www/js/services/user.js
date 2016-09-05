@@ -30,6 +30,9 @@ angular.module('roots.services')
     get: function(){
       return profile;
     },
+    id: function() {
+      return profile.id;
+    },
     name: function(){
       return profile.displayname;
     },

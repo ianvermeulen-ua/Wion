@@ -14,4 +14,8 @@ angular.module('roots.controllers')
 		User.logout();
 	};
 
+	$scope.$on( 'membership_changed', function() {
+		$scope.role = User.role();
+	} );
+
 });
