@@ -93,3 +93,14 @@ img.auth-logo {
 .fc-view {
 	background-color: #fff;
 }
+
+.event-card,
+.event-card h5 {
+	color: #fff; 
+	text-align: center;
+	text-decoration: none;
+}
+
+.event-card div {
+	background-color: #cf0013;
+}

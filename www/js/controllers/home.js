@@ -1,6 +1,6 @@
 angular.module('roots.controllers')
 
-.controller('HomeCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicPopup, Post, Bookmark) {
+.controller('HomeCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicPopup, Post, Bookmark, Calendar) {
 
 	$scope.posts = [];
 	$scope.isFetching = true;	
@@ -11,6 +11,8 @@ angular.module('roots.controllers')
 		total_items: 1,
 		total_pages: 0
 	};
+
+	$scope.displayEvents = Calendar.get();
 
 	$scope.items_per_page = 3;
 	$scope.localStoragePrefix = 'home_'; 

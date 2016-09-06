@@ -18,6 +18,7 @@ angular.module('roots.controllers')
                 modifiedEvent.start = start;
                 modifiedEvent.end = end;
                 modifiedEvent.sticky = true;
+                modifiedEvent.url = event.url;
 
                 modifiedEvents.push( modifiedEvent );
             } );

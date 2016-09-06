@@ -1,4 +1,4 @@
-<ion-view view-title='<span class="nav-title"> Wikings nieuws </span> <img src="img/logo-red.png" class="nav-logo">'>
+<ion-view view-title='<span class="nav-title"> Wikings nieuws </span> <img src="img/logo.png" class="nav-logo">'>
   <ion-content>    
 
 	<ion-refresher
@@ -6,6 +6,26 @@
 		spinner="spiral" 
 		on-refresh="doRefresh()">
 	</ion-refresher>
+
+
+	<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
+		
+			<ion-slide ng-repeat="event in displayEvents">
+				<a ng-href="{{event.url}}" class="event-card">
+					<div class="list card">
+						<h5>
+							{{event.title}}
+						</h5>
+						<p>
+							{{event.start | date:'dd MMMM yyyy'}}
+						</p>
+						<small>
+							Klik voor meer informatie...
+						</small>
+					</div>
+				</a>
+			</ion-slide>
+	</ion-slide-box>
 
   	<div class="posts">
 		<div class="list card" ng-repeat="item in posts track by $index">
