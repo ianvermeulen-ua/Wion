@@ -1,32 +1,35 @@
 angular.module('roots.controllers')
 
 .controller('CalendarCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicModal, $ionicPopup, $ionicLoading, $location, Calendar) {
+    $scope.events = [];
+    $scope.eventSources = [ $scope.events ];
     
     $scope.doRefresh = function() {
         Calendar.fetch().success( function( response ) {
             var modifiedEvents = [];
             
-            for ( var event in response.events ) {
-                var start = new Date( event.start );
-                var end = new Date( event.end );
 
-                console.log( start );
-                console.log( end );
+            response.events.forEach( function( event ) {               
+                var start = moment( event.start ).toDate();
+                var end = moment( event.end ).toDate();
 
-                var modifiedEvent = event;
+                var modifiedEvent = {};
+        
+                modifiedEvent.title = event.title;
                 modifiedEvent.start = start;
                 modifiedEvent.end = end;
+                modifiedEvent.sticky = true;
 
                 modifiedEvents.push( modifiedEvent );
-            }
+            } );
 
             Calendar.set( modifiedEvents );
+
+            angular.forEach(modifiedEvents, function (event) {
+                $scope.events.push(event);
+            });
         } );
     };
 
     $scope.doRefresh();
-
-    var calendar = Calendar.get();
-
-    $scope.eventSources = calendar.events;
 } );
