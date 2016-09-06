@@ -89,3 +89,7 @@ img.auth-logo {
 .previous-title .nav-logo {
 	display: none;
 }
+
+.fc-view {
+	background-color: #fff;
+}
