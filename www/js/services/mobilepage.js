@@ -5,7 +5,7 @@ angular.module('roots.services')
 	var post_type = 'mobile-page';
 	var items = [
 	             {
-					 'section-slug' : 'about-us',
+					 'section-slug' : 'about',
 					 'content' : 'Wij zijn Wikings.'
 				 }
     ];
@@ -20,7 +20,7 @@ angular.module('roots.services')
 			category = newCategory;
 		},
 		get: function() {
-			return $http.jsonp(api + 'get_category_posts/?slug=' + category + '&post_type=mobile-pages&callback=JSON_CALLBACK');
+			return $http.jsonp(api + 'get_category_posts/?slug=' + category + '&post_type=' + post_type + '&callback=JSON_CALLBACK');
 		}
 	};
 
