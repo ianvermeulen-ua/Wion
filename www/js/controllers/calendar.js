@@ -1,8 +1,19 @@
 angular.module('roots.controllers')
 
 .controller('CalendarCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicModal, $ionicPopup, $ionicLoading, $location, Calendar) {
+     $scope.uiConfig = {
+      calendar:{
+        eventClick: function( event ) {
+            if ( event.url !== null && typeof event.url !== 'undefined' && event.url !== '' ) {
+                window.open( event.url, '_system', 'location=yes' );
+            }
+        }
+      }
+    };
+    
     $scope.events = Calendar.get();
     $scope.eventSources = [ $scope.events ];
+    var firstRefresh = false;
 
     $scope.doRefresh = function() {
         Calendar.fetch().success( function( response ) {
@@ -32,11 +43,23 @@ angular.module('roots.controllers')
                 $scope.events.push(event);
             });
 
+            $scope.eventSources = [$scope.events];
+
             $scope.$broadcast('scroll.refreshComplete');
+
+            if ( !firstRefresh ) {
+                $ionicLoading.hide();
+                firstRefresh = true;
+            }
+            
         } );
     };
 
-    if(navigator.onLine) {
+    if(navigator.onLine && !firstRefresh) {
+         $ionicLoading.show({
+            template: 'Refreshing...'
+        });
         $scope.doRefresh();
     }
+
 } );

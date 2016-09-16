@@ -380,6 +380,17 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
       authenticate: true
     })
 
+    .state('app.weduc', {
+      url: '/weduc',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/weduc.html',
+          controller: 'WeducCtrl'
+        }
+      },
+      authenticate: true
+    })
+
     .state('app.forms', {
       url: '/forms',
       views: {
