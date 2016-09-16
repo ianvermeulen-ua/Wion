@@ -12,11 +12,16 @@ angular.module('roots.controllers')
 		total_pages: 0
 	};
 
-	$scope.displayEvents = Calendar.get().filter( function( event ) {
-		var startDate = new Date(event.start);
-
-		return startDate.getTime() >= Date.now();
+	[].filter( function( test ) {
+		//penor
 	} );
+	if ( Calendar.get() !== null ) {
+		$scope.displayEvents = Calendar.get().filter( function( event ) {
+			var startDate = new Date(event.start);
+
+			return startDate.getTime() >= Date.now();
+		} );
+	}
 
 	$scope.items_per_page = 3;
 	$scope.localStoragePrefix = 'home_'; 

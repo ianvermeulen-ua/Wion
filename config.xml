@@ -2,15 +2,15 @@
 <widget id="be.diverence.wikings" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Wikings</name>
   <description>De Wikings app</description>
-  <author email="adan.archila@gmail.com" href="http://studio31.co/">
-      Adan Archila
+  <author email="hello@diverence.be" href="http://diverence.be">
+      Diverence
     </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="android-minSdkVersion" value="8"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>

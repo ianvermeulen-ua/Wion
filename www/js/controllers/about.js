@@ -5,7 +5,7 @@ angular.module('roots.controllers')
 	$scope.shouldRefresh = false;
 
 	// set the page category to about
-	MobilePage.setCategory('about');
+	MobilePage.setCategory( 'about' );
 
 	/**
 	 * Dictionary of objects that contain both the factory of the object and the prefix for storage
