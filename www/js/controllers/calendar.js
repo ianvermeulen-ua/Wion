@@ -3,7 +3,7 @@ angular.module('roots.controllers')
 .controller('CalendarCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicModal, $ionicPopup, $ionicLoading, $location, Calendar) {
     $scope.events = Calendar.get();
     $scope.eventSources = [ $scope.events ];
-    
+
     $scope.doRefresh = function() {
         Calendar.fetch().success( function( response ) {
             var modifiedEvents = [];
@@ -31,8 +31,12 @@ angular.module('roots.controllers')
             angular.forEach(modifiedEvents, function (event) {
                 $scope.events.push(event);
             });
+
+            $scope.$broadcast('scroll.refreshComplete');
         } );
     };
 
-    $scope.doRefresh();
+    if(navigator.onLine) {
+        $scope.doRefresh();
+    }
 } );

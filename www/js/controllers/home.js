@@ -12,11 +12,10 @@ angular.module('roots.controllers')
 		total_pages: 0
 	};
 
-	[].filter( function( test ) {
-		//penor
-	} );
-	if ( Calendar.get() !== null ) {
-		$scope.displayEvents = Calendar.get().filter( function( event ) {
+	var calenderEvents = Calendar.get();
+
+	if ( calenderEvents !== null && calenderEvents.constructor === Array ) {
+		$scope.displayEvents = calenderEvents.filter( function( event ) {
 			var startDate = new Date(event.start);
 
 			return startDate.getTime() >= Date.now();
@@ -98,13 +97,6 @@ angular.module('roots.controllers')
 	$scope.bookmarkThis = function(item){
 
 		Bookmark.save(item);
-
-		var alertPopup = $ionicPopup.alert({
-			title: 'Saved!',
-			template: 'You can reading it later.'
-		});
-
-
 	};
 
 });
