@@ -9,7 +9,7 @@ var api = 'http://wikings.diverence.be/api/';
 var useAuth = true;
 var showWalkthrough = false;
 var showOfflineMessage = true;
-var blockIfOffline = true;
+var blockIfOffline = false;
 
 angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angularMoment', 'ngMap', 'ngCordova', 'ui.calendar'])
 
