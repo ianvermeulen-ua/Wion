@@ -45,12 +45,11 @@ angular.module('roots.services')
     isLoggedIn: function() {
       return isLoggedIn; 
     },
-    register: function(nonce, firstName, lastName, username, email, password, study, year){        
+    register: function(nonce, firstName, lastName, email, password, study, year){        
       var registerRequest = $http.jsonp( encodeURI( api+'user/register/?nonce='+nonce+
       '&display_name='+firstName+'%20'+lastName+
         '&first_name='+firstName+
         '&last_name='+lastName+
-        '&username='+username+
         '&email='+email+
         '&user_pass='+password+
         '&notify=no&insecure=cool&callback=JSON_CALLBACK' ) );

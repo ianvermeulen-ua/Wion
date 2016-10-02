@@ -184,7 +184,6 @@ angular.module('roots.controllers')
           			User.register(nonce, 
 					  $scope.signupData.firstName, 
 					  $scope.signupData.lastName, 
-					  $scope.signupData.username, 
 					  $scope.signupData.email, 
 					  $scope.signupData.password,
 					  $scope.signupData.study,

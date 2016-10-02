@@ -45,16 +45,6 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
       }
 
       if(showOfflineMessage && !blockIfOffline){
-        $ionicLoading.show({
-          template: 'Your device is offline.'
-        });
-
-        // if you don't want to block the app but just show a message, set here the amount of miliseconds for the message.
-        // but if you want to block the app remove the setTimeout.
-        setTimeout(function(){
-          $ionicLoading.hide();           
-        }, 10000);  
-
       }
     });
 
