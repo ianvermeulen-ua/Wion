@@ -34,7 +34,10 @@ angular.module('roots.services')
       return profile.id;
     },
     name: function(){
-      return profile.displayname;
+      return profile.firstname + ' ' + profile.lastname;
+    },
+    nickname: function(){
+      return profile.nickname;
     },
     email: function(){
       return profile.email;

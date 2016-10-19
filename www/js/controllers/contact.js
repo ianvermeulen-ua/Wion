@@ -14,7 +14,7 @@ angular.module('roots.controllers')
 
 			$http({
 				method  : 'POST',
-				url     : 'http://wikings.diverence.be/send-email.php',
+				url     : 'http://wikings.be/send-email.php',
 				data    : {
 					name: $scope.contact.name,
 					email: $scope.contact.email,

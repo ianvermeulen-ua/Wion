@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.min.js
 
-var api = 'http://wikings.diverence.be/api/';
+var api = 'http://wikings.be/api/';
 var useAuth = true;
 var showWalkthrough = false;
 var showOfflineMessage = true;

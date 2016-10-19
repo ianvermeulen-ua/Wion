@@ -104,3 +104,13 @@ img.auth-logo {
 .event-card div {
 	background-color: #cf0013;
 }
+
+.small-list {
+	padding-left: 25px;
+	font-size: 0.7em;
+	list-style-type: circle;
+}
+
+.small-list li {
+	padding-left: 15px;
+}

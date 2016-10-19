@@ -46,9 +46,9 @@
               <i class="icon ion-thumbsup"></i>
               Bijna lid!
         </ion-item>
-        <ion-item class="item-icon-left" menu-close href="#/app/member" ng-show="role == 'administrator'">
+        <ion-item class="item-icon-left" menu-close href="#/app/member" ng-show="role == 'administrator' || role == 'lid'">
               <i class="icon ion-bowtie"></i>
-              Lid worden?
+              Lidkaart
         </ion-item>
         <ion-item class="item-icon-left" menu-close ng-click="logout()" ng-show="isLogged">
           <i class="icon ion-log-out"></i>

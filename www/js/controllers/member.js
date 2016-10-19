@@ -2,6 +2,8 @@ angular.module('roots.controllers')
 
 .controller('MemberCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $compile, $ionicPopup, $ionicLoading, User) {
     $scope.role = User.role();
+    $scope.userName = User.name();
+    $scope.userLogin = User.nickname();
 
     $scope.requestMembership = function() {
         var token = $localstorage.get("token");

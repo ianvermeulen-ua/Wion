@@ -1,4 +1,4 @@
-<ion-view view-title='<span class="nav-title"> Lid worden </span> <img src="img/logo.png" class="nav-logo">'>
+<ion-view view-title='<span class="nav-title"> Lid </span> <img src="img/logo.png" class="nav-logo">'>
 
 	<ion-content>    
 		<ion-refresher
@@ -19,7 +19,8 @@
 		<div class="list card">	
 
 			<div class="item">
-				<h2>Word nu lid!</h2>
+				<h2 ng-if="role == 'subscriber' || role == 'nietbetaald'">Word nu lid!</h2>
+				<h2 ng-if="role == 'lid'"> <img src="img/logo-red.png" height="30px"  style="vertical-align: middle; margin-right: 5px;" /> Wiking {{userName}} &lt; {{userLogin}} &gt; </h2>
 			</div>
 
 			<div class="item item-body" ng-if="role=='subscriber'">
@@ -55,12 +56,18 @@
 			<div class="item item-body" ng-if="role=='lid'">
 				<p>
 					Je bent lid! Geniet van talloze voordelen zoals:
-
-					<ul>
-						<li> Lorem ipsum </li>
-						<li> Dolor sit amet </li>
-						<li> Consectur </li>
-						<li> ... </li>
+					<ul class="small-list">
+						<li> Korting op al onze activiteiten (cantus, td, 24u…) </li>
+						<li> Kebab of Ossenmarkt – Ossenmarkt 28 </li>
+						<li> Coco – Korte Winkelstraat 2-8 </li>
+						<li> Verde-foodbar – Korte Winkelstraat 12 </li>
+						<li> 8tea5 – Korte Klarenstraat 15, Antwerpen/Rue des Fripiers 17,Brussel </li>
+						<li> Chipz – Kipdorp 61/Waalse Kaai/Italiëlei 120 </li>
+						<li> Goesting – Falconplein 45 </li>
+						<li> Bar Maison – Prinsesstraat 38 </li>
+						<li> Coffee College – Sint-Jacobsmarkt 1 </li>
+						<li> Delibox – Sint-Jacobsstraat 23 </li>
+						<li> George Espressobar – Londenstraat 27 </li>
 					</ul>
 				</p>
 			</div>
