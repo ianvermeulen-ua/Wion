@@ -29,8 +29,8 @@
 
 			<div class="item item-body">
 				<img class="full-image" src="img/about.jpg">
-				<p ng-repeat="page in content.page" ng-if="page.custom_fields['section-slug'] == 'about-us'"> 
-					{{page.custom_fields.content[0]}} 
+				<p ng-repeat="page in content.page" ng-if="page.custom_fields['section-slug'] == 'about-us'" ng-bind-html="page.custom_fields.content[0]"> 
+					
 				</p>
 			</div>
 

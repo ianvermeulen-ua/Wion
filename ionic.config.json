@@ -1,6 +1,6 @@
 {
   "name": "Wikings",
-  "app_id": "9f9e645c",
+  "app_id": "38e70b8a",
   "gulpStartupTasks": [
     "sass",
     "parsejs",

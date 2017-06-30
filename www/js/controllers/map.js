@@ -1,6 +1,6 @@
 angular.module('roots.controllers')
 
-.controller('MapCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $compile, NgMap) {
+.controller('MapCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $compile) {
 
 	NgMap.getMap().then(function(map) {
 		$scope.map = map;
