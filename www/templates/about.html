@@ -1,10 +1,10 @@
 <ion-view view-title='<span class="nav-title"> Over ons </span> <img src="img/logo.png" class="nav-logo">'>
 
-	<ion-content>    
+	<ion-content>
 
 	<ion-refresher
 		pulling-text="Pull to refresh..."
-		spinner="spiral" 
+		spinner="spiral"
 		on-refresh="doRefresh()">
 	</ion-refresher>
 		<!-- slideshow -->
@@ -21,37 +21,20 @@
 		</ion-slide-box>
 
 		<!-- card -->
-		<div class="list card">	
+		<div class="list card">
 
 			<div class="item">
-				<h2>Wij, Wikings</h2>
+				<h2>Wikings-NSK</h2>
 			</div>
 
 			<div class="item item-body">
 				<img class="full-image" src="img/about.jpg">
-				<p ng-repeat="page in content.page" ng-if="page.custom_fields['section-slug'] == 'about-us'" ng-bind-html="page.custom_fields.content[0]"> 
-					
+				<p ng-repeat="page in content.page" ng-if="page.custom_fields['section-slug'] == 'about-us'" ng-bind-html="page.custom_fields.content[0]">
+
 				</p>
 			</div>
 
 		</div>
-
-		<div class="list">
-			<a class="item item-icon-left" ng-repeat="contact in content.contact" ng-href="{{contact.custom_fields.link[0]}}">
-				<i class="icon {{contact.custom_fields.icon[0]}}"></i>
-				{{contact.custom_fields.waarde[0]}}
-			</a>
-		</div>
-
-		<!-- slideshow with text overlay -->
-		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" show-pager="false">
-			<ion-slide>
-				<div class="image-box">
-					<img class="full-image" src="img/about-bottom-slide-1.jpg">
-					<p>Imagination TD Wikings 2015</p>
-				</div>
-			</ion-slide>
-		</ion-slide-box>
 
 		<div class="loading-box" ng-show="isFetching">
 			<ion-spinner icon="spiral"></ion-spinner>

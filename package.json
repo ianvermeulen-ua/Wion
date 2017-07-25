@@ -1,55 +1,68 @@
 {
-  "name": "wikings",
-  "version": "1.0.1",
-  "description": "Wikings: An Ionic project",
-  "dependencies": {
-    "@ionic/cloud-angular": "^0.12.0",
-    "angular": "^1.6.5",
-    "cordova-android": "^6.2.3",
-    "gulp-cached": "^1.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-dependency-install": "0.0.8",
-    "gulp-install": "^1.1.0",
-    "gulp-jshint": "^1.12.0",
-    "gulp-minify-css": "^0.3.13",
-    "gulp-ng-annotate": "^0.5.3",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
-    "ionic": "^3.5.0",
-    "jshint-stylish": "^1.0.2",
-    "xcode": "^0.8.4"
-  },
-  "devDependencies": {
-    "@ionic/cli-plugin-cordova": "1.4.1",
-    "@ionic/cli-plugin-gulp": "1.0.2",
-    "@ionic/cli-plugin-ionic1": "2.0.1",
-    "bower": "^1.8.0",
-    "gulp": "^3.9.1",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-util": "^2.2.20",
-    "shelljs": "^0.3.0"
-  },
-  "cordovaPlugins": [
-    {
-      "locator": "https://github.com/phonegap/phonegap-plugin-barcodescanner.git",
-      "id": "phonegap-plugin-barcodescanner"
+    "name": "wikings",
+    "version": "1.0.1",
+    "description": "Wikings: An Ionic project",
+    "dependencies": {
+        "@ionic/cloud-angular": "^0.12.0",
+        "angular": "^1.6.5",
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-inappbrowser": "^1.7.1",
+        "cordova-plugin-whitelist": "https://github.com/apache/cordova-plugin-whitelist.git",
+        "gulp-cached": "^1.1.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-dependency-install": "0.0.8",
+        "gulp-install": "^1.1.0",
+        "gulp-jshint": "^1.12.0",
+        "gulp-minify-css": "^0.3.13",
+        "gulp-ng-annotate": "^0.5.3",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.2",
+        "gulp-uglify": "^1.5.4",
+        "ionic": "^3.5.0",
+        "jshint-stylish": "^1.0.2",
+        "onesignal-cordova-plugin": "^2.1.2",
+        "xcode": "^0.8.4"
     },
-    "pushwoosh-cordova-plugin",
-    "cordova-plugin-camera",
-    "cordova-plugin-console",
-    "cordova-plugin-datepicker",
-    "cordova-plugin-device",
-    "cordova-plugin-email-composer",
-    "cordova-plugin-inappbrowser",
-    "cordova-plugin-network-information",
-    "cordova-plugin-splashscreen",
-    "cordova-plugin-transport-security",
-    "cordova-plugin-whitelist",
-    "cordova-plugin-x-socialsharing",
-    "cordova-plugin-admobpro"
-  ],
-  "cordovaPlatforms": []
+    "devDependencies": {
+        "@ionic/cli-plugin-cordova": "1.4.1",
+        "@ionic/cli-plugin-gulp": "1.0.2",
+        "@ionic/cli-plugin-ionic1": "2.0.1",
+        "bower": "^1.8.0",
+        "gulp": "^3.9.1",
+        "gulp-load-plugins": "^0.10.0",
+        "gulp-util": "^2.2.20",
+        "shelljs": "^0.3.0"
+    },
+    "cordovaPlugins": [
+        {
+            "locator": "https://github.com/phonegap/phonegap-plugin-barcodescanner.git",
+            "id": "phonegap-plugin-barcodescanner"
+        },
+        "pushwoosh-cordova-plugin",
+        "cordova-plugin-camera",
+        "cordova-plugin-console",
+        "cordova-plugin-datepicker",
+        "cordova-plugin-device",
+        "cordova-plugin-email-composer",
+        "cordova-plugin-inappbrowser",
+        "cordova-plugin-network-information",
+        "cordova-plugin-splashscreen",
+        "cordova-plugin-transport-security",
+        "cordova-plugin-whitelist",
+        "cordova-plugin-x-socialsharing",
+        "cordova-plugin-admobpro"
+    ],
+    "cordovaPlatforms": [],
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "onesignal-cordova-plugin": {},
+            "cordova-plugin-inappbrowser": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
 }

@@ -13,107 +13,60 @@ var blockIfOffline = false;
 
 angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angularMoment', 'ngCordova', 'ui.calendar'])
 
-.run(function($ionicPlatform, $rootScope, $state, User, Walkthrough, $cordovaNetwork, $ionicLoading) {
+.run(function($ionicPlatform, $rootScope, $state, User, Walkthrough, $cordovaNetwork, $ionicLoading, $ionicPopup) {
 
   $ionicPlatform.ready(function() {
-    console.log('Im ready');
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
 
-    }
+    console.log("Ready");
+
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
 
-    // Check network status
-    var isOnline = $cordovaNetwork.isOnline();
-    var isOffline = $cordovaNetwork.isOffline();
-
     $rootScope.$on('$cordovaNetwork:online', function(event, networkState){
       $ionicLoading.hide();
     });
 
-    $rootScope.$on('$cordovaNetwork:offline', function(event, networkState){      
+    $rootScope.$on('$cordovaNetwork:offline', function(event, networkState){
       if(showOfflineMessage && blockIfOffline){
         $ionicLoading.show({
           template: 'Your device is offline.'
-        }); 
+        });
       }
 
       if(showOfflineMessage && !blockIfOffline){
       }
     });
 
-    // Code here Push Notifications
-    var isAndroid = ( /(android)/i.test(navigator.userAgent) ) ? true : false;
 
-    function initPushwoosh() {
+    // Enable to debug issues.
+    // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
-      var pushNotification = window.plugins.pushNotification;
-   
-      //set push notification callback before we initialize the plugin
-      document.addEventListener('push-notification', function(event) {
+    var notificationOpenedCallback = function(jsonData) {
+      console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+    };
 
-        if(isAndroid){
-          var title = event.notification.title;
-          var userData = event.notification.userdata;
-          if(typeof(userData) != "undefined") {
-              console.warn('user data: ' + JSON.stringify(userData));
-          }             
-          alert(title);
-        } else {
-          var notification = event.notification;
-          alert(notification.aps.alert);        
-          pushNotification.setApplicationIconBadgeNumber(0);
-        }
-
-      });
-
-      if(isAndroid){
-        pushNotification.onDeviceReady({ projectid: "1013721581789", appid : "B5BBA-1EEF4" }); // Insert your Google Project Number and your PushWoosh App ID
-      } else {
-        pushNotification.onDeviceReady({pw_appid:"B5BBA-1EEF4"}); // Insert your PushWoosh App ID
-      }
-       
-      //register for pushes
-      pushNotification.registerDevice(
-        function(status) {
-          console.warn('registerDevice: ' + status);
-        },
-        function(status) {
-          console.warn('failed to register : ' + JSON.stringify(status));
-          alert(JSON.stringify(['failed to register ', status])); // remove this on production
-        }
-      );
-
-      if(!isAndroid){
-        pushNotification.setApplicationIconBadgeNumber(0);
-      }
-
-    }  
-
-    initPushwoosh(); // Hide this line if you don't want push notifications
-
+    window.plugins.OneSignal
+      .startInit("55a03c6e-c55b-446f-a6bf-8909638140a0")
+      .handleNotificationOpened(notificationOpenedCallback)
+      .endInit();
   });
-  
-  $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState) {        
+
+  $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState) {
 
     var isGoingToLogin = toState.name === "auth.index";
     var isGoingHome = toState.name === "app.categoriesMenu";
 
     if(isGoingToLogin && User.isLoggedIn()){
-      event.preventDefault(); 
+      event.preventDefault();
 
       if( showWalkthrough && !Walkthrough.hasBeenShown() ){
         console.log('going to walkthrough');
-        $state.go("walkthrough");      
+        $state.go("walkthrough");
       } else {
         console.log('going to home');
-        $state.go("app.home");  
+        $state.go("app.home");
       }
 
       return;
@@ -124,16 +77,16 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
     }
 
     var requireLogin = useAuth && toState.authenticate;
-    
+
     if (requireLogin) {
       event.preventDefault();
 
       if( showWalkthrough && !Walkthrough.hasBeenShown() ){
         console.log('going to walkthrough');
-        $state.go("walkthrough");      
+        $state.go("walkthrough");
       } else {
         console.log('going to home');
-        $state.go("auth.index");  
+        $state.go("auth.index");
       }
 
       return;
@@ -150,11 +103,11 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
     }
 
   });
-  
+
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  
+
   $stateProvider
 
   .state('auth', {
@@ -358,7 +311,7 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
       },
       authenticate: true
     })
-    
+
     .state('app.calendar', {
       url: '/calendar',
       views: {
@@ -451,18 +404,18 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
     var $state = $injector.get("$state");
     $state.go("app.home");
   });
-  
+
 })
 
 // filters
 .filter('inSlicesOf', function($rootScope) {
 
-    makeSlices = function(items, count) { 
-      if (!count)  
+    makeSlices = function(items, count) {
+      if (!count)
         count = 3;
-      
+
       if (!angular.isArray(items) && !angular.isString(items)) return items;
-      
+
       var array = [];
       for (var i = 0; i < items.length; i++) {
         var chunkIndex = parseInt(i / count, 10);
@@ -476,11 +429,11 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
         return $rootScope.arrayinSliceOf;
       else
         $rootScope.arrayinSliceOf = array;
-        
+
       return array;
     };
-    
-    return makeSlices; 
+
+    return makeSlices;
 
 })
 

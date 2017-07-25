@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "26473045259",
+    "firebase_url": "https://wikings-4c155.firebaseio.com",
+    "project_id": "wikings-4c155",
+    "storage_bucket": "wikings-4c155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26473045259:android:c640a1309b04740e",
+        "android_client_info": {
+          "package_name": "be.diverence.wikings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26473045259-3vja2bame8pi3e5qplht51sa15jqomm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUaj29jFn9MNiyChX3uIUlZSeV3KU0eMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26473045259:android:18e1ad8fbf22a6c2",
+        "android_client_info": {
+          "package_name": "be.wikings.wikings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26473045259-3vja2bame8pi3e5qplht51sa15jqomm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUaj29jFn9MNiyChX3uIUlZSeV3KU0eMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

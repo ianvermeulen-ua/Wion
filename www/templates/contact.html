@@ -1,33 +1,41 @@
 <ion-view view-title='<span class="nav-title"> Contact </span> <img src="img/logo.png" class="nav-logo">'>
 
-	<ion-content>    
+    <ion-content>
 
-		<img class="full-image" src="img/wikings-contact-sized.jpg">
+        <img class="full-image" src="img/wikings-contact-sized.jpg">
 
-		<!-- contact form -->
-		<form name="contactForm" ng-submit="sendEmail(contactForm)" novalidate>
-			<div class="list card">
+        <!-- contact form -->
+        <form name="contactForm" ng-submit="sendEmail(contactForm)" novalidate>
+            <div class="list card">
 
-				<label class="item item-input">
-					<input type="text" placeholder="Voor- en achternaam" ng-model="contact.name" required>
-				</label>
-				<label class="item item-input">
-					<input type="email" placeholder="Email" ng-model="contact.email" required>
-				</label>
-				<label class="item item-input">
-					<input type="tel" placeholder="Telefoon" ng-model="contact.phone" required>
-				</label>
-				<label class="item item-input">
-					<textarea placeholder="Bericht" ng-model="contact.message" rows="8" style="resize:none" required></textarea>
-				</label>	
+                <label class="item item-input">
+                    <input type="text" placeholder="Voor- en achternaam" ng-model="contact.name" required>
+                </label>
+                <label class="item item-input">
+                    <input type="email" placeholder="Email" ng-model="contact.email" required>
+                </label>
+                <label class="item item-input">
+                    <input type="tel" placeholder="Telefoon" ng-model="contact.phone" required>
+                </label>
+                <label class="item item-input">
+                    <textarea placeholder="Bericht" ng-model="contact.message" rows="8" style="resize:none"
+                              required></textarea>
+                </label>
 
-			</div>
+            </div>
 
-			<div class="padding"> 
-				<button class="button button-block button-positive" type="submit">Verstuur</button>
-			</div>
-		</form>
+            <div class="padding">
+                <button class="button button-block button-positive" type="submit">Verstuur</button>
+            </div>
+        </form>
 
-	</ion-content>
+        <div class="list card">
+            <a class="item item-icon-left"
+               ng-href="tel:+32472357383">
+                <i class="icon ion-ios-telephone-outline"></i>
+                +32472/35.73.83
+            </a>
+        </div>
+    </ion-content>
 
 </ion-view>
