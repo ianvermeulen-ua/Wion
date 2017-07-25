@@ -2,349 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0938f7e-0db4-4fb5-b046-f750409e4a66" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/CONTRIBUTORS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/Attr2MapOptions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/GeoCoder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/NavigatorGeolocation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/NgMap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/NgMapPool.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/StreetView.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/bicycling-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/css/jsdoc-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/css/prettify-tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/css/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/custom-control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/directions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/drawing-manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/dynamic-maps-engine-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Bold-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Bold-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Bold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Italic-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Italic-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Italic-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Light-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Light-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Regular-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fonts/OpenSans-Regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/fusion-tables-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/heatmap-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/info-window.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/js/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/js/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/kml-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/map-data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/map-lazy-load.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/map-type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/maps-engine-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/ngMap.ng-map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/ngmap.custom-marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/overlay-map-type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/places-auto-complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/shape.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/Attr2MapOptions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/GeoCoder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/NavigatorGeolocation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/NgMap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/NgMapPool.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/StreetView.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/bicycling-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/custom-control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/directions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/drawing-manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/dynamic-maps-engine-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/fusion-tables-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/heatmap-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/info-window.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/kml-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/map-data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/map-lazy-load.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/map-type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/maps-engine-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/ngMap.ng-map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/ngmap.custom-marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/overlay-map-type.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/places-auto-complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/shape.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/streetview-panorama.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/traffic-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/source/transit-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/streetview-panorama.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/traffic-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/docs/transit-layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/scripts/ng-map.debug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/scripts/ng-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/build/scripts/ng-map.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/publish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/scripts/linenumber.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/scripts/prettify/lang-css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/scripts/prettify/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/styles/jsdoc-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/styles/prettify-jsdoc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/static/styles/prettify-tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/container.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/details.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/example.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/examples.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/exceptions.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/layout.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/mainpage.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/members.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/method.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/params.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/properties.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/returns.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/source.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/tutorial.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/jsdoc/template/tmpl/type.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/config/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/contributors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/controllers/map-controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/bicycling-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/custom-control.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/custom-marker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/directions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/drawing-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/dynamic-maps-engine-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/fusion-tables-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/heatmap-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/info-window.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/kml-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/map-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/map-lazy-load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/map-type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/maps-engine-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/marker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/overlay-map-type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/places-auto-complete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/shape.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/street-view-panorama.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/traffic-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/directives/transit-layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/filters/camel-case.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/filters/jsonize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/road-trip.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/attr2-map-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/geo-coder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/navigator-geolocation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/ng-map-pool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/ng-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/services/street-view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/TODO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/directives/map_controller_spec_back.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/directives/map_spec_bak.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/directives/marker_spec_bak.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/directives/shape_spec_bak.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/directives/street_view_panorama_spec_bak.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/e2e/testapp_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/lib/angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/lib/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/lib/markerclusterer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/services/attr2_options_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/services/geo_coder_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/services/navigator_geolocation_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/services/ng-map-pool-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/spec/services/street_view_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/USGSOverlay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/aerial-rotate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/aerial-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/all-examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/all-examples.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/circle-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-custom-state.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-disableUI.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-options.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-positioning.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/control-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker-clusterer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker-custom-style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker-ng-repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker-two-way-binding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/custom-marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/directions-with-current-location.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/directions-with-custom-marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/directions-with-ng-repeat-panels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/directions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/directions2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/drawing-manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/event-arguments.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/event-domlistener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/event-properties.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/event-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/geojson.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/groundoverlay-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/heatmap.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/icon-complex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/icon-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/images/beachflag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/images/spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/infowindow-simple-max.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/infowindow-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/infowindow_compile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/infowindow_geolookup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/infowindow_ng_click.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-bicycling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-dynamic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-quakes-advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-quakes-default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-quakes-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-data-style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-dynamicmapsengine.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-fusiontables-heatmap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-fusiontables-query.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-fusiontables-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-fusiontables-styling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-georss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-heatmap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-kml-features.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-kml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-mapsengine.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-style-event.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-traffic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/layer-transit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/prettify-tomorrow-night.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/prettify-tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/lib/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-coordinates.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-geolocation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-gulp-usemin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-gulp-usemin/map-gulp-usemin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-gulp-usemin/myapp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-initialized-callback.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-initialized.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-lazy-inint.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-lazy-load-params.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-projection-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map-with-dynamic-id.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_control.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_fit_bounds.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_geo_fallback_center.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_no_default_style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_options.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_with_address.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_with_current_position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_with_dynamic_address.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_with_dynamic_center.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/map_zoom_to_include_markers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/mapsenginelayer-noauth-layerid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/mapsenginelayer-noauth-layerkey.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-image-overlay.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-image.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-overlay.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-styled-complex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/maptype-styled-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-animations-iteration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-animations.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-clusterer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-remove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-symbol-custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-symbol-predefined.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker-with-default-options.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_data_with_ng_repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_dynamic_ng_repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_icon.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_on_street_view.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_address.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_current_position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_dynamic_address.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_ng_repeat_dynamic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_ng_repeat_no_watcher.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/marker_with_parent_controller.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/multiple_maps_on_a_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-hideshow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-remove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-symbol-animate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-symbol-arrow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-symbol-custom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/overlay-symbol-dashed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/places-auto-complete.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polygon-arrays.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polygon-autoclose.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polygon-draggable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polygon-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polyline-complex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polyline-remove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/polyline-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/rectangle-event.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/rectangle-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/rectangle-zoom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/script-tags-for-development.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/get-starbucks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/markerclusterer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/markerclusterer_packed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/markers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/quakes.geo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/scripts/starbucks.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/shape.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/shape_circle_with_current_position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/shape_circle_with_dynamic_address.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/shape_with_ng_repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/street-view-panorama.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/street-view-panorama_container.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/street-view-panorama_container2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/street-view_road_trip.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/taxi-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/ui-bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/ui-router.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/us-states-20m.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/lib/ngmap/testapp/user-editable-shapes.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/logo-shield.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/Wikings.keystore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/secure.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/about-slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/about-slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/about-slide-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/auth-bg.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/intro-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/intro-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/intro-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/ionic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/logo-expand-opacity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/logo-expand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/logo-expand.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/slide-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/wikings-contact.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic.config.json" afterPath="$PROJECT_DIR$/ionic.config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.min.js" afterPath="$PROJECT_DIR$/www/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/project.properties" afterPath="$PROJECT_DIR$/platforms/android/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.min.js" afterPath="$PROJECT_DIR$/www/js/controllers.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/map.js" afterPath="$PROJECT_DIR$/www/js/controllers/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/about.html" afterPath="$PROJECT_DIR$/www/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/auth.js" afterPath="$PROJECT_DIR$/www/js/controllers/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/calendar.js" afterPath="$PROJECT_DIR$/www/js/controllers/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.min.js" afterPath="$PROJECT_DIR$/www/js/services.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/user.js" afterPath="$PROJECT_DIR$/www/js/services/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/auth.index.html" afterPath="$PROJECT_DIR$/www/templates/auth.index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/auth.login.html" afterPath="$PROJECT_DIR$/www/templates/auth.login.html" />
     </list>
     <ignored path="wion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -364,10 +57,182 @@
     <favorites_list name="wion" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="auth.index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/auth.index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/auth.login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ionic.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/ionic/css/ionic.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21736">
+              <caret line="22" column="173887" lean-forward="false" selection-start-line="22" selection-start-column="173887" selection-end-line="22" selection-end-column="173887" />
+              <folding>
+                <element signature="e#134568#134826#2" expanded="true" />
+                <element signature="e#134967#135225#2" expanded="true" />
+                <element signature="e#135345#135603#2" expanded="true" />
+                <element signature="e#135683#135941#2" expanded="true" />
+                <element signature="e#136082#136340#2" expanded="true" />
+                <element signature="e#136460#136718#2" expanded="true" />
+                <element signature="e#143536#144983#2" expanded="true" />
+                <element signature="e#145138#146582#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ionic.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/ionic/release/css/ionic.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18947">
+              <caret line="22" column="153316" lean-forward="false" selection-start-line="22" selection-start-column="153316" selection-end-line="22" selection-end-column="153316" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-291">
+              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <marker date="1500982483000" expanded="true" signature="62:66" ph="{...}" />
+                <marker date="1500982483000" expanded="true" signature="958:1005" ph="{...}" />
+                <marker date="1500982483000" expanded="true" signature="1064:1115" ph="{...}" />
+                <marker date="1500982483000" expanded="true" signature="1173:1201" ph="{...}" />
+                <marker date="1500982483000" expanded="true" signature="1231:1293" ph="{...}" />
+                <marker date="1500982483000" expanded="true" signature="1356:1425" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+              <folding>
+                <marker date="1500982514000" expanded="true" signature="4661:4672" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/build/intermediates/assets/release/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-172">
+              <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+              <folding>
+                <marker date="1500980743000" expanded="true" signature="62:66" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="958:1005" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1027:1052" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1064:1115" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1173:1201" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1231:1293" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1356:1425" ph="{...}" />
+                <marker date="1500980743000" expanded="true" signature="1442:1466" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>a</find>
+      <find>alert</find>
+      <find>eventSources</find>
+      <find>forgot</find>
+      <find>p</find>
+      <find>push</find>
+      <find>pushw</find>
+      <find>pushwo</find>
+      <find>pushwoos</find>
+      <find>pushwoosh</find>
+      <find>notifica</find>
+      <find>#fff</find>
+      <find>width:</find>
+      <find>color: #fff;</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/www/js/controllers</dir>
+      <dir>$PROJECT_DIR$/www/js</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/js/controllers/calendar.js" />
+        <option value="$PROJECT_DIR$/www/js/services/user.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/auth.js" />
+        <option value="$PROJECT_DIR$/www/css/ionic.app.css" />
+        <option value="$PROJECT_DIR$/platforms/android/build/intermediates/assets/release/www/css/style.css" />
+        <option value="$PROJECT_DIR$/platforms/android/assets/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/templates/auth.index.html" />
+        <option value="$PROJECT_DIR$/www/templates/auth.login.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config.xml" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -378,23 +243,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/platforms/android/cordova/node_modules" />
-    <handled-path value="$PROJECT_DIR$/platforms/ios/cordova/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="228" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -412,32 +265,25 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -447,11 +293,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -459,17 +305,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -483,11 +329,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -505,11 +351,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wion" />
+              <option name="myItemId" value="Wion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -525,8 +371,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -536,18 +419,24 @@
     <property name="editor.config.accepted" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -568,24 +457,17 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <kind value="FILE" />
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
-    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -635,6 +517,7 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -660,30 +543,10 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="wion" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -717,15 +580,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="wion" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -739,19 +597,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="wion" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="wion" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -769,11 +637,6 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
   </component>
@@ -791,28 +654,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="228" width="1280" height="709" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37883684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -830,10 +697,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/templates/about.html">
+    <entry file="file://$PROJECT_DIR$/www/js/services/category.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/bookmark.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -841,15 +743,93 @@
     <entry file="file://$PROJECT_DIR$/www/templates/auth.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.buildpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="746">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -857,296 +837,239 @@
     <entry file="file://$PROJECT_DIR$/www/js/controllers.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/comment.js">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/auth-bg.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/about-bottom-slide-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/about-slide-1-sized.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/about-slide-3-sized.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/intro-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/ionic.app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9739" column="28" lean-forward="false" selection-start-line="9739" selection-start-column="28" selection-end-line="9739" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/intro-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/ionic.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo-expand.psd">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo-expand.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/placeholder.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/slide-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/slide-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/slide-3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/weduc-logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/wikings-contact-sized.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/wikings-contact.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/logo-red.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/build/intermediates/assets/release/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding>
+            <marker date="1500980743000" expanded="true" signature="62:66" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="958:1005" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1027:1052" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1064:1115" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1173:1201" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1231:1293" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1356:1425" ph="{...}" />
+            <marker date="1500980743000" expanded="true" signature="1442:1466" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <marker date="1500982483000" expanded="true" signature="62:66" ph="{...}" />
+            <marker date="1500982483000" expanded="true" signature="958:1005" ph="{...}" />
+            <marker date="1500982483000" expanded="true" signature="1064:1115" ph="{...}" />
+            <marker date="1500982483000" expanded="true" signature="1173:1201" ph="{...}" />
+            <marker date="1500982483000" expanded="true" signature="1231:1293" ph="{...}" />
+            <marker date="1500982483000" expanded="true" signature="1356:1425" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/release/css/ionic.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18947">
+          <caret line="22" column="153316" lean-forward="false" selection-start-line="22" selection-start-column="153316" selection-end-line="22" selection-end-column="153316" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/css/ionic.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21736">
+          <caret line="22" column="173887" lean-forward="false" selection-start-line="22" selection-start-column="173887" selection-end-line="22" selection-end-column="173887" />
+          <folding>
+            <element signature="e#134568#134826#2" expanded="true" />
+            <element signature="e#134967#135225#2" expanded="true" />
+            <element signature="e#135345#135603#2" expanded="true" />
+            <element signature="e#135683#135941#2" expanded="true" />
+            <element signature="e#136082#136340#2" expanded="true" />
+            <element signature="e#136460#136718#2" expanded="true" />
+            <element signature="e#143536#144983#2" expanded="true" />
+            <element signature="e#145138#146582#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/auth.index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/auth.login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categories-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categories-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categories-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categories-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categories-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding>
+            <marker date="1500982514000" expanded="true" signature="4661:4672" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

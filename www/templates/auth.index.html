@@ -1,17 +1,25 @@
 <ion-view class="auth-bg">
-	<ion-content>    	
+	<ion-content>
 
-		<img src="img/logo-expand-opacity.png" alt="Logo" class="auth-logo">
-		
+        <img src="img/logo-shield.svg" alt="Logo" class="auth-logo"/>
+
+
 		<div class="logo-title-container">
-			<p style="color: #fff;"> Welkom bij <p class="font-lobster" style="color: #fff; font-size: 2em;"> Wikings </p> . </p>
-			<p style="color: #fff;"> Meld je aan om je app te starten. </p>
+			<p style="margin-bottom: 15px; font-size: 3em;"> Wikings </p>
+			<p> Meld je aan om je app te starten. </p>
 		</div>
 		<div class="footer-buttons">
 			<div class="padding">
-				<button ng-click="openLogin()" class="button button-block button-energized"><strong>LOGIN</strong></button>
-				<button ng-click="openSignup()" class="button button-block button-assertive"><strong>REGISTREER</strong></button>
+				<button ng-click="openLogin()" class="button button-block button-assertive"><strong>LOGIN</strong></button>
+				<button ng-click="openSignup()" class="button button-block button-stable"><strong>REGISTREER</strong></button>
 			</div>
 		</div>
+
+        <div style="text-align: center;">
+            <a href="http://wikings.be/privacy" style="color: #333;" target="_blank">Privacy statement</a>
+            <a href="http://wikings.be/terms" style="color: #333;" target="_blank">Terms and conditions</a>
+        </div>
+
+
 	</ion-content>
 </ion-view>

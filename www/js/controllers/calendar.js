@@ -10,7 +10,7 @@ angular.module('roots.controllers')
         }
       }
     };
-    
+
     $scope.events = Calendar.get();
     $scope.eventSources = [ $scope.events ];
     var firstRefresh = false;
@@ -18,13 +18,13 @@ angular.module('roots.controllers')
     $scope.doRefresh = function() {
         Calendar.fetch().success( function( response ) {
             var modifiedEvents = [];
-            
-            response.events.forEach( function( event ) {               
+
+            response.events.forEach( function( event ) {
                 var start = moment( event.start ).toDate();
                 var end = moment( event.end ).toDate();
 
                 var modifiedEvent = {};
-        
+
                 modifiedEvent.title = event.title;
                 modifiedEvent.start = start;
                 modifiedEvent.end = end;
@@ -43,6 +43,7 @@ angular.module('roots.controllers')
                 $scope.events.push(event);
             });
 
+            console.log("set sources!");
             $scope.eventSources = [$scope.events];
 
             $scope.$broadcast('scroll.refreshComplete');
@@ -51,7 +52,7 @@ angular.module('roots.controllers')
                 $ionicLoading.hide();
                 firstRefresh = true;
             }
-            
+
         } );
     };
 

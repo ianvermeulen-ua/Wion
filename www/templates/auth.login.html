@@ -1,6 +1,6 @@
 <ion-modal-view>
-	<ion-header-bar class="bar-energized">
-		<h1 class="title font-lobster">{{ modalTitle }}</h1>
+	<ion-header-bar class="bar-stable">
+		<h1 class="title">{{ modalTitle }}</h1>
 		<div class="buttons">
 		  <button class="button button-clear icon ion-android-close" ng-click="closeLogin()">
 		  </button>
@@ -9,7 +9,7 @@
 	<ion-content>
 
 		<!-- login form -->
-	  	<form name="loginForm" ng-submit="doLogin(loginForm)" ng-hide="forgotMode" novalidate> 
+	  	<form name="loginForm" ng-submit="doLogin(loginForm)" ng-hide="forgotMode" novalidate>
 			<div class="list list-inset">
 				<label class="item item-input">
 					<span class="input-label">Email</span>
@@ -20,23 +20,23 @@
 					<input type="password" ng-model="loginData.password" required>
 				</label>
 			</div>
-			<div class="padding"> 
+			<div class="padding">
 				<button class="button button-block button-assertive" type="submit">Log in</button>
 				<button class="button button-block button-clear button-energized" ng-click="changeToForgot()" type="button">Wachtwoord vergeten?</button>
 			</div>
 		</form>
 
 		<!-- forgot password form -->
-		<form name="forgotPasswordForm" ng-submit="retrievePassword(forgotPasswordForm)" ng-show="forgotMode" novalidate> 
+		<form name="forgotPasswordForm" ng-submit="retrievePassword(forgotPasswordForm)" ng-show="forgotMode" novalidate>
 			<div class="list list-inset">
 				<label class="item item-input">
 					<span class="input-label">Gebruikersnaam</span>
 					<input type="text" ng-model="loginData.username" required>
 				</label>
 			</div>
-			<div class="padding"> 
+			<div class="padding">
 				<button class="button button-block button-assertive" type="submit">Wachtwoord ophalen</button>
-				<button class="button button-block button-clear" ng-click="changeToLogin()" type="button">Login</button>      	
+				<button class="button button-block button-clear" ng-click="changeToLogin()" type="button">Login</button>
 			</div>
 		</form>
 

@@ -1,11 +1,14 @@
 /* Empty. Add your own CSS if you like */
 
 .bar.bar-energized {
-	border-color: #fff;
-	background-color: #fff;
 	background-image: none;
 	color: #333;
 
+}
+
+.button.button-energized:hover {
+    color: #cf0013;
+    text-decoration: none;
 }
 
 .bar-energized.nav-bar {
@@ -39,14 +42,8 @@
 	background-color: #cf0013;
 }
 
-.button.button-energized {
-	background-color: transparent;
-	border-color: #fff;
-}
-
 .button.button-energized.activated {
 	background-color: rgba(255, 255, 255, 0.5);
-	border-color: #fff;
 }
 
 .button.button-assertive {
@@ -57,21 +54,15 @@
 	background-color: rgba(207, 0, 19, 1);
 }
 img.auth-logo {
-	width: 60%;
+	width: 20%;
 	margin-bottom: 20px;
-}
-
-.auth-bg {
-	background: url('../img/auth-bg.jpeg') no-repeat center center fixed;
 }
 
 .logo-title-container {
 	text-align: center;
-	margin-bottom: 100px;
 }
 
 .logo-title {
-	color: #fff;
 	font-size: 3em;
 	text-transform: uppercase;
 }
@@ -96,7 +87,7 @@ img.auth-logo {
 
 .event-card,
 .event-card h5 {
-	color: #fff; 
+	color: #fff;
 	text-align: center;
 	text-decoration: none;
 }

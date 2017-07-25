@@ -75,10 +75,10 @@ angular.module('roots.controllers')
 			User.getAuthNonce().success(function(response){
 
 				if(response.status==='ok'){
-          			nonce = response.nonce;          
+          			nonce = response.nonce;
 
           			User.login(nonce, $scope.loginData.username, $scope.loginData.password).success(function(response){
-						
+
 						if(response.status==='ok'){
 							$ionicLoading.hide();
 							$scope.loginModal.hide();
@@ -90,7 +90,7 @@ angular.module('roots.controllers')
 							$ionicLoading.hide();
 							$ionicPopup.alert({
 								title: 'Error',
-								template: "Your username/password was incorrect, please try again."
+								template: "Je gebruikersnaam/wachtwoord werd niet herkend. Probeer het later nog eens."
 							});
 						}
 
@@ -98,7 +98,7 @@ angular.module('roots.controllers')
 						$ionicLoading.hide();
 						$ionicPopup.alert({
 							title: 'Error',
-							template: "There was an error connecting to the server, please try again later."
+							template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 						});
 					});
 
@@ -106,7 +106,7 @@ angular.module('roots.controllers')
           			$ionicLoading.hide();
           			$ionicPopup.alert({
 						title: 'Error',
-						template: "There was an error connecting to the server, please try again later."
+						template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 					});
           		}
 
@@ -114,20 +114,20 @@ angular.module('roots.controllers')
 				$ionicLoading.hide();
 				$ionicPopup.alert({
 					title: 'Error',
-					template: "There was an error connecting to the server, please try again later."
+					template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 				});
 			});
-		
+
 		} else {
 			$ionicPopup.alert({
 				title: 'Error',
-				template: "You can't leave any fields empty."
+				template: "Er mogen geen velden leeg gelaten worden."
 			});
-		}		
+		}
 	};
 
 	$scope.retrievePassword = function(){
-		
+
 		if($scope.loginData.username!==''){
 
 			$ionicLoading.show({
@@ -135,27 +135,27 @@ angular.module('roots.controllers')
 			});
 
 			User.forgotPassword($scope.loginData.username).success(function(response){
-				
+				console.log($scope.loginData.username + " sent!");
 				$ionicLoading.hide();
 				$ionicPopup.alert({
 					title: 'Success!',
-					template: "A link for password reset has been emailed to you. Please check your email."
+					template: "Een link voor een wachtwoord reset werd verstuurd. Gelieve je mail te controleren."
 				});
 
 			}).error(function(response){
 				$ionicLoading.hide();
 				$ionicPopup.alert({
 					title: 'Error',
-					template: "There was an error connecting to the server, please try again later."
+					template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 				});
 			});
 		} else {
 			$ionicLoading.hide();
 			$ionicPopup.alert({
 				title: 'Error',
-				template: "Please enter your username"
+				template: "Gelieve je gebruikersnaam op te geven."
 			});
-		}		
+		}
 
 	};
 
@@ -170,7 +170,7 @@ angular.module('roots.controllers')
 
 	$scope.doSignup = function(form){
 
-		if(form.$valid) {			
+		if(form.$valid) {
 
 			$ionicLoading.show({
 				template: 'Loading...'
@@ -181,10 +181,10 @@ angular.module('roots.controllers')
 				if(response.status==='ok'){
           			nonce = response.nonce;
 
-          			User.register(nonce, 
-					  $scope.signupData.firstName, 
-					  $scope.signupData.lastName, 
-					  $scope.signupData.email, 
+          			User.register(nonce,
+					  $scope.signupData.firstName,
+					  $scope.signupData.lastName,
+					  $scope.signupData.email,
 					  $scope.signupData.password,
 					  $scope.signupData.study,
 					  $scope.signupData.year ).success(function(response){
@@ -200,7 +200,7 @@ angular.module('roots.controllers')
           							$ionicLoading.hide();
 									$scope.signupModal.hide();
 									response.username = $scope.signupData.username;
-									response.email = $scope.signupData.email;		
+									response.email = $scope.signupData.email;
 									User.set(response);
 									$rootScope.$broadcast('user.login');
 									$location.path('/categories/menu');
@@ -209,7 +209,7 @@ angular.module('roots.controllers')
           							$ionicLoading.hide();
 									$ionicPopup.alert({
 										title: 'Error',
-										template: "There was an error connecting to the server, please try again later."
+										template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 									});
           						}
 
@@ -217,10 +217,10 @@ angular.module('roots.controllers')
           						$ionicLoading.hide();
 								$ionicPopup.alert({
 									title: 'Error',
-									template: "There was an error connecting to the server, please try again later."
+									template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 								});
           					});
-          					
+
 
           				} else if (response.status ==='error') {
 
@@ -236,7 +236,7 @@ angular.module('roots.controllers')
           				$ionicLoading.hide();
 						$ionicPopup.alert({
 							title: 'Error',
-							template: "There was an error connecting to the server, please try again later."
+							template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 						});
           			});
 
@@ -246,17 +246,17 @@ angular.module('roots.controllers')
           		$ionicLoading.hide();
 				$ionicPopup.alert({
 					title: 'Error',
-					template: "There was an error connecting to the server, please try again later."
+					template: "Er is een fout opgetreden tijdens het verbinden met de server. Probeer het later nog eens."
 				});
   			});
 
 		} else {
 			$ionicPopup.alert({
 				title: 'Error',
-				template: "You can't leave any fields empty."
+				template: "Er mogen geen velden leeg gelaten worden."
 			});
 		}
-			
+
 	};
 
 });
