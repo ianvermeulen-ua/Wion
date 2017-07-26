@@ -1,17 +1,17 @@
 <ion-view view-title='<span class="nav-title"> Kalender </span> <img src="img/logo.png" class="nav-logo">'>
 
-	<ion-content>    
+	<ion-content>
 
         <ion-refresher
             pulling-text="Pull to refresh..."
-            spinner="spiral" 
+            spinner="spiral"
             on-refresh="doRefresh()">
         </ion-refresher>
-        
+
         <div class="list card">
-            <div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
+            <div style="padding: 10px;" ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="eventCalendar"></div>
         </div>
-        
+
 		<div class="loading-box" ng-show="isFetching">
 			<ion-spinner icon="spiral"></ion-spinner>
 		</div>

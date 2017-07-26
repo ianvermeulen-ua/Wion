@@ -12,7 +12,7 @@ angular.module('roots.controllers')
             template: 'Requesting...'
         });
 
-        User.requestMembership( token ).success( function( response ) { 
+        User.requestMembership( token ).success( function( response ) {
             var profile = User.get();
             profile.role = 'nietbetaald';
 
@@ -33,6 +33,21 @@ angular.module('roots.controllers')
         } );
     };
 
+    /**
+     * Broadcast the refresh complete event if needed
+     */
+    function broadcastRefreshComplete() {
+      if($scope.shouldRefresh===true){
+        $scope.$broadcast('scroll.refreshComplete');
+        $scope.shouldRefresh = false;
+      }
+    }
+
+    $scope.doRefresh = function(){
+      $scope.shouldRefresh = true;
+		  $scope.checkPayment();
+	  };
+
     $scope.checkPayment = function() {
         $ionicLoading.show({
             template: 'Checking...'
@@ -48,6 +63,7 @@ angular.module('roots.controllers')
             else {
                 $scope.paymentMessage = 'Uw betaling is nog niet goedgekeurd. Probeer het later opnieuw!';
             }
+            broadcastRefreshComplete();
             $ionicLoading.hide();
         } )
         .error( function( response ) {
@@ -57,7 +73,12 @@ angular.module('roots.controllers')
                 title: 'Error',
                 template: "Er is een fout opgetreden met het verbinden met de server. Probeer later opnieuw"
             } );
+            broadcastRefreshComplete();
         } );
-        
+
     };
 } );
+
+
+
+

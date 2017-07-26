@@ -29,7 +29,7 @@ angular.module('roots.controllers')
                 modifiedEvent.title = event.title;
                 modifiedEvent.start = start;
                 modifiedEvent.end = end;
-                modifiedEvent.sticky = true;
+                modifiedEvent.stick = true;
                 modifiedEvent.url = event.url;
 
                 modifiedEvents.push( modifiedEvent );
