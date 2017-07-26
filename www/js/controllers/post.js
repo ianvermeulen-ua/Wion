@@ -3,6 +3,10 @@ angular.module('roots.controllers')
 .controller('PostCtrl', function($scope, $ionicModal, $timeout, $sce, $ionicPlatform, $ionicPopup, $ionicScrollDelegate, $ionicActionSheet, $cordovaSocialSharing, item, Comment, User) {
 
 	$scope.item = item;
+
+	var content = item.content;
+
+
 	$scope.itemContent = $sce.trustAsHtml(item.content);
 	$scope.comments = [];
 	$scope.theComment = '';
@@ -16,7 +20,7 @@ angular.module('roots.controllers')
 		Comment.getFromPost($scope.item.id, 'post').success(function(response){
 			console.log(response);
 			$scope.comments = response.posts[0].comments;
-			$ionicScrollDelegate.resize();					
+			$ionicScrollDelegate.resize();
 			$scope.isFetching = false;
 			$scope.theComment = '';
 		});
@@ -28,11 +32,11 @@ angular.module('roots.controllers')
 		$scope.isFetching = true;
 
 		Comment.submit($scope.item.id, $scope.theComment).success(function(response){
-			
+
 			if(response.status==='pending' || response.status==='ok'){
 
 				$scope.getComments();
-			
+
 			} else {
 				alertPopup = $ionicPopup.alert({
 					title: 'Error',
@@ -66,7 +70,7 @@ angular.module('roots.controllers')
 				// add cancel code..
 			},
 			buttonClicked: function(index) {
-				
+
 				var message = 'Check out the article: '+post.title;
 				var emailMessage = 'Check out the article: '+post.title+' in this link: '+post.url;
 

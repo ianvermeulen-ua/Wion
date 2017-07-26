@@ -6,7 +6,7 @@ angular.module('roots.controllers')
 
 	$scope.sendEmail = function(form) {
 
-		if(form.$valid) {	
+		if(form.$valid) {
 
 			$ionicLoading.show({
 				template: 'Sending...'
@@ -20,8 +20,15 @@ angular.module('roots.controllers')
 					email: $scope.contact.email,
 					phone: $scope.contact.phone,
 					message: $scope.contact.message
-				},  // pass in data as strings
-				headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+				},
+        transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj)
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+            return str.join("&");
+        },
+        // pass in data as strings
+				headers : {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}  // set the headers so angular passing info as form data (not request payload)
 			}).success(function(data) {
 
 				$scope.contact = {};
@@ -30,16 +37,16 @@ angular.module('roots.controllers')
 
 				$ionicPopup.alert({
 					title: 'Success',
-					template: data
+					template: 'Bericht verzonden.'
 				});
 
-			}).error(function(){
+			}).error(function(data){
 
 				$ionicLoading.hide();
 
 				$ionicPopup.alert({
 					title: 'Error',
-					template: "There was an error connecting to the server, please try again."
+					template: "Er is een fout opgetreden bij het versturen."
 				});
 
 			});
@@ -49,10 +56,10 @@ angular.module('roots.controllers')
 
 			$ionicPopup.alert({
 				title: 'Error',
-				template: "Please fill in all fields."
+				template: "Gelieve alle velden in te vulden."
 			});
 		}
-			
+
     };
 
 });
