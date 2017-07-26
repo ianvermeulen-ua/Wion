@@ -3,6 +3,7 @@ angular.module('roots.controllers')
 .controller('CalendarCtrl', function($scope, $timeout, $rootScope, $sce, $localstorage, $ionicModal, $ionicPopup, $ionicLoading, $location, Calendar) {
      $scope.uiConfig = {
       calendar:{
+        height: 750,
         eventClick: function( event ) {
             if ( event.url !== null && typeof event.url !== 'undefined' && event.url !== '' ) {
                 cordova.InAppBrowser.open(url, '_blank', 'location=yes');

@@ -1,4 +1,7 @@
 /* Empty. Add your own CSS if you like */
+.fc-time {
+  display: none;
+}
 
 .bar.bar-energized {
 	background-image: none;
