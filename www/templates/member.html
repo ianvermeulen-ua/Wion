@@ -1,81 +1,94 @@
 <ion-view view-title='<span class="nav-title"> Lid </span> <img src="img/logo.png" class="nav-logo">'>
 
-	<ion-content>    
-		<ion-refresher
-			pulling-text="Pull to refresh..."
-			spinner="spiral" 
-			on-refresh="doRefresh()">
-		</ion-refresher>
+    <ion-content>
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                spinner="spiral"
+                on-refresh="doRefresh()">
+        </ion-refresher>
 
 
-		<!-- slideshow -->
-		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
-			<ion-slide>
-				<img class="full-image" src="img/about-slide-1-sized.jpg">
-			</ion-slide>
-		</ion-slide-box>
+        <!-- slideshow -->
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
+            <ion-slide>
+                <img class="full-image" src="img/about-slide-1-sized.jpg">
+            </ion-slide>
+        </ion-slide-box>
 
-		<!-- card -->
-		<div class="list card">	
+        <!-- card -->
+        <div class="list card">
 
-			<div class="item">
-				<h2 ng-if="role == 'subscriber' || role == 'nietbetaald'">Word nu lid!</h2>
-				<h2 ng-if="role == 'lid'"> <img src="img/logo-red.png" height="30px"  style="vertical-align: middle; margin-right: 5px;" /> Wiking {{userName}} &lt; {{userLogin}} &gt; </h2>
-			</div>
+            <div class="item">
+                <h2 ng-if="role == 'subscriber' || role == 'nietbetaald'">Word nu lid!</h2>
+                <h2 ng-if="role == 'lid'"><img src="img/logo-red.png" height="30px"
+                                               style="vertical-align: middle; margin-right: 5px;"/>
+                    Wiking {{ userName }} &lt; {{ userLogin }} &gt; </h2>
+            </div>
 
-			<div class="item item-body" ng-if="role=='subscriber'">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non orci augue.
-					<button class="button button-block button-assertive" ng-click="requestMembership()" ng-hide="membershipRequesting">
-						Ja, ik wil lid worden!
-					</button>
-					<p style="text-align: center;">
-						<ion-spinner ng-show="membershipRequesting"></ion-spinner>
-					</p>
-				</p>
-			</div>
-			<div class="item item-body" ng-if="role=='nietbetaald'">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non orci augue. Mauris lacinia eget dui ac congue. Morbi ac nisl vel turpis ultrices blandit interdum non mi. Suspendisse finibus ultricies imperdiet. Etiam cursus ac eros in euismod. Fusce purus eros, luctus quis justo eu, sagittis hendrerit sapien.
-				</p>
-					<p>
-					&euro; 10 storten op BE00 0000 0000 0000 <br>
-					WIKINGS-NSK
-					</p>
-					<button class="button button-block button-assertive" ng-click="checkPayment()" ng-hide="paymentChecking">
-						Controleer betaling
-					</button>
-					<p style="text-align: center;">
-						<ion-spinner ng-show="paymentChecking"></ion-spinner>
-					</p>
-					<p style="color: #cf0013; text-align: center;" ng-if="paymentMessage != ''">
-						{{paymentMessage}}
-					</p>
-				</p>
-			</div>
-			<div class="item item-body" ng-if="role=='lid'">
-				<p>
-					Je bent lid! Je krijgt daarom korting op de meeste activiteiten (cantus, td, 24u…) en bovendien geniet je van 10% korting in volgende zaken:
-					<ul class="small-list">
-						<li> Kebab of Ossenmarkt – Ossenmarkt 28 </li>
-						<li> Coco – Korte Winkelstraat 2-8 </li>
-						<li> Verde-foodbar – Korte Winkelstraat 12 </li>
-						<li> 8tea5 – Korte Klarenstraat 15, Antwerpen/Rue des Fripiers 17,Brussel </li>
-						<li> Chipz – Kipdorp 61/Waalse Kaai/Italiëlei 120 </li>
-						<li> Goesting – Falconplein 45 </li>
-						<li> Bar Maison – Prinsesstraat 38 </li>
-						<li> Coffee College – Sint-Jacobsmarkt 1 </li>
-						<li> Delibox – Sint-Jacobsstraat 23 </li>
-						<li> George Espressobar – Londenstraat 27 </li>
-					</ul>
-				</p>
-			</div>
-			<div class="item item-body" ng-if="role=='administrator'">
-				<p>
-					Je bent lid van het Wikings praesidium. Je kan aanpassingen aanbrengen aan de website en de app.
-				</p>
-			</div>
-		</div>
-	</ion-content>
+            <div class="item item-body" ng-if="role=='subscriber'">
+                <p>
+                    Wil jij ook lid worden van Wikings-NSK en genieten van alle voordelen? Klik dan snel op onderstaande
+                    knop! Het lidmaatschap kost slechts een luttele €10.
+                    <button class="button button-block button-assertive" ng-click="requestMembership()"
+                            ng-hide="membershipRequesting">
+                        Ja, ik wil lid worden!
+                    </button>
+                <p style="text-align: center;">
+                    <ion-spinner ng-show="membershipRequesting"></ion-spinner>
+                </p>
+                </p>
+            </div>
+            <div class="item item-body" ng-if="role=='nietbetaald'">
+                <p>
+                    We zijn er bijna… Je account hoeft nu slechts nog geactiveerd te worden! Dit gebeurt van zodra de
+                    betaling bij ons binnen is.<br>
+                    Dan hoef je nadien enkel nog je lidkaart op te halen bij ons!
+                </p>
+                <p>
+                    De betaling dient te gebeuren binnen de 5 werkdagen.
+
+                <ul>
+                    <li>€10</li>
+                    <li>Wikings-NSK</li>
+                    <li>BE86 7350 1309 1550</li>
+                </ul>
+                </p>
+                <button class="button button-block button-assertive" ng-click="checkPayment()"
+                        ng-hide="paymentChecking">
+                    Controleer betaling
+                </button>
+                <p style="text-align: center;">
+                    <ion-spinner ng-show="paymentChecking"></ion-spinner>
+                </p>
+                <p style="color: #cf0013; text-align: center;" ng-if="paymentMessage != ''">
+                    {{ paymentMessage }}
+                </p>
+                </p>
+            </div>
+            <div class="item item-body" ng-if="role=='lid'">
+                <p>
+                    Je bent lid! Je krijgt daarom korting op de meeste activiteiten (cantus, td, 24u…) en bovendien
+                    geniet je van 10% korting in volgende zaken:
+                <ul class="small-list">
+                    <li> Kebab of Ossenmarkt – Ossenmarkt 28</li>
+                    <li> Coco – Korte Winkelstraat 2-8</li>
+                    <li> Verde-foodbar – Korte Winkelstraat 12</li>
+                    <li> 8tea5 – Korte Klarenstraat 15, Antwerpen/Rue des Fripiers 17,Brussel</li>
+                    <li> Chipz – Kipdorp 61/Waalse Kaai/Italiëlei 120</li>
+                    <li> Goesting – Falconplein 45</li>
+                    <li> Bar Maison – Prinsesstraat 38</li>
+                    <li> Coffee College – Sint-Jacobsmarkt 1</li>
+                    <li> Delibox – Sint-Jacobsstraat 23</li>
+                    <li> George Espressobar – Londenstraat 27</li>
+                </ul>
+                </p>
+            </div>
+            <div class="item item-body" ng-if="role=='administrator'">
+                <p>
+                    Je bent lid van het Wikings praesidium. Je kan aanpassingen aanbrengen aan de website en de app.
+                </p>
+            </div>
+        </div>
+    </ion-content>
 
 </ion-view>
