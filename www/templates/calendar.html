@@ -9,7 +9,7 @@
         </ion-refresher>
 
         <div class="list card">
-            <div style="padding: 10px;" ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="eventCalendar"></div>
+            <div style="padding: 10px;" on-swipe-left="toNext()" on-swipe-right="toPrevious()" ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="eventCalendar"></div>
         </div>
 
 		<div class="loading-box" ng-show="isFetching">

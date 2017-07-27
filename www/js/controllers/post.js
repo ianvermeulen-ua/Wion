@@ -6,8 +6,9 @@ angular.module('roots.controllers')
 
 	var content = item.content;
 
+  content = content.replace(/href='(.*)'/,'ng-click="openExternal($event)" data-external="$1"').replace(/<a/,"<div").replace(/a>/,"div>");
 
-	$scope.itemContent = $sce.trustAsHtml(item.content);
+	$scope.itemContent = $sce.trustAsHtml(content);
 	$scope.comments = [];
 	$scope.theComment = '';
 	$scope.isFetching = false;
