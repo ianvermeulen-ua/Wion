@@ -17,7 +17,7 @@ angular.module('roots.services')
       return calendar;
     },
     fetch: function(){
-      return $http.jsonp( encodeURI( api+'user/get_events?callback=JSON_CALLBACK&insecure=cool' ) );
+      return $http.jsonp( encodeURI( api+'user/get_events?callback=JSON_CALLBACK' ) );
     }
   };
 
