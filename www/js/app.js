@@ -115,7 +115,8 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
     abstract: true,
     templateUrl: 'templates/auth.html',
     controller: 'AuthCtrl',
-    authenticate: false
+    authenticate: false,
+    cache: false
   })
 
     .state('auth.index', {
@@ -141,7 +142,8 @@ angular.module('roots', ['ionic', 'roots.controllers', 'roots.services', 'angula
     abstract: true,
     templateUrl: 'templates/menu.html',
     controller: 'MenuCtrl',
-    authenticate: true
+    authenticate: true,
+    cache: false
   })
 
     .state('app.home', {

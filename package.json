@@ -6,6 +6,7 @@
         "@ionic/cloud-angular": "^0.12.0",
         "angular": "^1.6.5",
         "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
         "cordova-plugin-inappbrowser": "^1.7.1",
         "cordova-plugin-whitelist": "https://github.com/apache/cordova-plugin-whitelist.git",
         "gulp-cached": "^1.1.1",
@@ -23,6 +24,7 @@
         "ionic": "^3.5.0",
         "jshint-stylish": "^1.0.2",
         "onesignal-cordova-plugin": "^2.1.2",
+        "phonegap-plugin-barcodescanner": "git+https://github.com/wildabeast/BarcodeScanner.git",
         "xcode": "^0.8.4"
     },
     "devDependencies": {
@@ -58,8 +60,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "onesignal-cordova-plugin": {},
-            "cordova-plugin-inappbrowser": {}
+            "cordova-plugin-inappbrowser": {},
+            "onesignal-cordova-plugin": {}
         },
         "platforms": [
             "android"

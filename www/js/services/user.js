@@ -92,6 +92,7 @@ angular.module('roots.services')
       $localstorage.remove("token");
       $localstorage.remove("user");
       $rootScope.$broadcast('user.logout');
+      profile = {};
     }
   };
 
